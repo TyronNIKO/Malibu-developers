@@ -1,4 +1,5 @@
 # Malibu-developers Project
+![image](https://github.com/TyronNIKO/Malibu-developers/assets/33459109/5ddaea61-bd23-443d-b675-70ad63c8db94)
 
 Hero/Header - Anna
 About me - Maxim
