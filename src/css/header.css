@@ -46,6 +46,11 @@
   }
   .header-list-order {
     display: block;
+    background-color: #ed3b44;
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
   }
   .burger-menu {
     display: none;
@@ -77,8 +82,6 @@
   text-decoration-skip-ink: none;
   color: #fafafa;
 }
-.order {
-}
 
 /* modal window */
 .modal-menu {
@@ -105,6 +108,11 @@
   color: #fafafa;
 }
 .modal-menu-order-btn {
+  border-radius: 60px;
+  padding: 14px 31px;
+  width: 164px;
+  height: 45px;
+  background-color: #ed3b44;
 }
 @media only screen and (min-width: 1440px) {
 }
