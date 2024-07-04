@@ -1,0 +1,118 @@
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #fcfcfc;
+  /* border-bottom: 2px solid #e9e9e9; */
+}
+
+.container {
+  background-color: var(--Background);
+}
+.header-container {
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.header-logo-link {
+}
+.header-text-logo {
+}
+.header-list-menu {
+  display: none;
+}
+.header-list-order {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .header-list-menu {
+    display: block;
+  }
+  .header-list-order {
+    display: block;
+    background-color: #ed3b44;
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
+  }
+  .burger-menu {
+    display: none;
+  }
+}
+
+.header-dropdown-menu {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+}
+
+.header-dropdown-menu-content {
+  display: none;
+  position: absolute;
+  min-width: 67px;
+  z-index: 1;
+}
+.header-dropdown-menu-link {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+}
+
+/* modal window */
+.modal-menu {
+}
+.modal-menu-container {
+}
+.modal-menu-close-btn {
+}
+.modal-close-btn-icon {
+}
+.modal-menu-nav {
+}
+.modal-menu-nav-list {
+}
+.modal-menu-nav-item {
+}
+.modal-menu-nav-link {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+}
+.modal-menu-order-btn {
+  border-radius: 60px;
+  padding: 14px 31px;
+  width: 164px;
+  height: 45px;
+  background-color: #ed3b44;
+}
+@media only screen and (min-width: 1440px) {
+}
