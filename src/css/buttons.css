@@ -1,0 +1,34 @@
+button {
+  border: none;
+  outline: none;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+.btn {
+  padding: 18px 24px;
+  border: 1px rgba(var(--color-white), 0.2) solid;
+  border-radius: 60px;
+  background-color: transparent;
+  color: rgba(var(--color-white), 1);
+  transition: background-color, border-color 250ms ease-out;
+}
+.btn:hover,
+.btn:focus {
+  border-color: rgba(var(--color-white), 1);
+}
+.btn-primary {
+}
+.btn-round {
+  max-width: 150px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+.btn-red {
+  border: transparent;
+  background-color: rgba(var(--color-red), 1);
+}
+.btn-red:hover,
+.btn-red:focus {
+  background-color: rgba(var(--color-red-dark), 1);
+}
