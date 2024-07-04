@@ -4,13 +4,13 @@
 - *Team-lead* - Rada
 - *Scrum-master* - Volodymyr
 - Contributors:
- - *ero/Header* - Anna
- - *About me* - Maxim
- - *Benefits* - Katia
- - *Projects* - Nazar
- - *FAQ* - Artur
- - *Covers* - Alina
- - *Reviews* - Lyuba
- - *Work together* (footer) - Vladyslav
+  - *ero/Header* - Anna
+  - *About me* - Maxim
+  - *Benefits* - Katia
+  - *Projects* - Nazar
+  - *FAQ* - Artur
+  - *Covers* - Alina
+  - *Reviews* - Lyuba
+  - *Work together* (footer) - Vladyslav
 
 19 30 по Києву - щоденний збір
