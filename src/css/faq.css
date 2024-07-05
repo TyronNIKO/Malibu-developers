@@ -33,18 +33,18 @@
     grid-template-columns: 1fr;
 }
 
-.ac {
+.ac{
     margin-top: 0;
 }
 
-.ac.faq-item {
+.ac .faq-item {
     border: none;
     background-color: #1c1d20;
     padding: 20px 0;
     border-bottom: 1px solid rgba(250, 250, 250, 0.1);
 }
 
-.ac.faq-item span {
+.ac .faq-item span {
     font-family: 'Inter Tight';
     font-size: 20px;
     font-weight: 600;
@@ -132,7 +132,7 @@ p.ac-text {
         font-size: 20px;
     }
 
-    .ac.faq-item {
+     .ac.faq-item {
         background-color: #1c1d20;
         padding: 32px 0;
     }
@@ -164,14 +164,14 @@ p.ac-text {
         text-align: left;
     }
 
-    .accordion-container .ac .faq-item {
+    .accordion-container .ac.faq-item {
         border: none;
         padding-bottom: 32px;
         margin-bottom: 0;
         border-top: 1px solid rgba(250, 250, 250, 0.1);
     }
 
-    .ac.faq-item:nth-child(odd) {
+        .ac.faq-item:nth-child(odd) {
         border: 1px solid rgba(250, 250, 250, 0.1);
         border-left: none;
         padding-left: 0%;
@@ -179,7 +179,7 @@ p.ac-text {
 
     }
 
-    .ac.faq-item:nth-child(even) {
+        .ac.faq-item:nth-child(even) {
         border: 1px solid rgba(250, 250, 250, 0.1);
         border-right: none;
         padding-left: 32px;
