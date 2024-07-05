@@ -1,3 +1,36 @@
+.work-together-h2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding-top: 32px;
+
+}
+.work-together-h2 img {
+    width: 44px;
+    height: 44px;
+}
+.work-title {
+    color: #FAFAFA;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+}
+.work-title-2d-part{
+    margin-bottom: 63px;
+    color: #FAFAFA;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+}
+
+
+
 .work-together-cont {
     width: 375px;
     height: 552px;
@@ -9,18 +42,7 @@
     color: #ED3B44;
 }
 
-.work-title {
-    color: #FAFAFA;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 100%;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    padding-top: 32px;
-    padding-left: 16px;
-    padding-right: 92px;
-    margin-bottom: 63px;
-}
+
 
 .form-inputs {
     display: flex;
@@ -42,7 +64,8 @@ input {
     height: 44px;
     display: block;
     margin: 0 auto;
-    padding: 10px;
+  
+    box-sizing: border-box;
     position: relative;
     text-align: left;
 }
@@ -50,8 +73,8 @@ input {
 input::placeholder {
     color: #888;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0;
+    left: 0;
     pointer-events: none;
 }
 
@@ -71,7 +94,7 @@ input[type="comment"] {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
-    margin-left: 16px;
+
     margin-top: 16px;
 
 }
@@ -83,7 +106,6 @@ input[type="comment"] {
 
 .work-links-info {
     margin-top: 64px;
-    margin-left: 16px;
     margin-right: 59px;
     display: flex;
     gap: 4px;
@@ -136,14 +158,23 @@ input[type="comment"] {
         width: 768px;
         height: 636px;
     }
-
-    .work-title {
-        font-size: 64px;
-        padding-top: 88px;
-        padding-left: 32px;
-        padding-right: 204px;
-        margin-bottom: 18px;
-    }
+   .work-together-h2 {
+       gap: 0px;
+       column-gap: 20px;
+       row-gap: 10px;
+       padding-top: 85px;
+   }
+   .work-together-h2 img {
+       width: 70px;
+       height: 70px;
+   }
+   .work-title {
+       font-size: 64px;
+   }
+   .work-title-2d-part {
+       font-size: 64px;
+       margin-bottom: 18px;
+   }
 
     .form-inputs {
         display: flex;
@@ -153,6 +184,7 @@ input[type="comment"] {
         align-items: center;
         margin: 0;
         gap: 32px;
+        margin-bottom: 18px;
     }
 
     input {
@@ -162,7 +194,6 @@ input[type="comment"] {
         padding: 10px;
         position: relative;
         text-align: left;
-        margin-left: 32px;
     }
 
     .input-comment {
@@ -174,13 +205,13 @@ input[type="comment"] {
         height: 150px;
         margin-left: 0;
         margin-top: 0;
-        margin-right: 32px;
+        margin-right: 0;
     }
 
     .work-links-info {
-        margin-top: 18px;
-        margin-left: 32px;
-        margin-right: 318px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
 
         gap: 8px;
 
@@ -209,13 +240,11 @@ input[type="comment"] {
         width: 1440px;
     }
 
-    .work-title {
+ .work-together-h2 {
 
-        padding-top: 80px;
-        padding-left: 196px;
-        padding-right: 702px;
-    }
-
+width: 542px;
+margin-left: 196px;
+ }
     .form-inputs {
         margin: 0;
         gap: 32px;
@@ -237,12 +266,13 @@ input[type="comment"] {
 
         margin-left: 0;
         margin-top: 0;
-        margin-right: 196px;
+        margin-right: 0;
     }
 
     .work-links-info {
+        margin-top: 18px;
         margin-left: 196px;
-        margin-right: 826px;
+        margin-right: 0;
     }
 }
 
