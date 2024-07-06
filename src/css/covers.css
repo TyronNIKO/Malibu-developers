@@ -22,12 +22,12 @@
 
 .marquee {
   position: absolute;
-  top: -30px;
+  top: -300px;
   right: 0;
   left: 0;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
   justify-content: center;
   align-items: center;
 }
@@ -42,18 +42,17 @@
   gap: 24px;
   transform: rotate(16deg);
 }
-/* .marquee-wrapper {
-  height: 100%;
-} */
+
 .marquee-card {
   display: block;
   flex-shrink: 0;
-  /* width: 282px; */
+  width: 282px;
   height: 162px;
-  object-fit: cover;
 }
 .marquee-picture {
   width: 282px;
+  object-fit: cover;
+  height: 100%;
 }
 .animation {
   animation-name: marqueeLine;
@@ -61,18 +60,27 @@
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-/* .marquee-foto {
-  height: 100%;
-} */
+
 @keyframes marqueeLine {
   0% {
-    transform: translate(10px);
+    transform: translate(20px);
   }
   50% {
     transform: translate(-100px);
   }
   100% {
-    transform: translate(10px);
+    transform: translate(20px);
+  }
+}
+.marquee-inner:nth-child(3) {
+  padding-left: 300px;
+}
+.marquee-inner:nth-child(5) {
+  padding-left: 200px;
+}
+@media only screen and (max-width: 767px) {
+  .marquee-inner:nth-child(6) {
+    padding-right: 300px;
   }
 }
 
@@ -82,18 +90,15 @@
     height: 960px;
   }
   .marquee {
-    top: -40px;
+    top: -500px;
     gap: 44px;
   }
   .marquee-inner {
     gap: 44px;
   }
-  .marquee-inner:nth-child(2) {
-    padding-left: 200px;
-  }
 
   .marquee-card {
-    /* width: 544px; */
+    width: 544px;
     height: 314px;
   }
   .marquee-picture {
@@ -104,9 +109,14 @@
 /* Desktop */
 @media only screen and (min-width: 1440px) {
   .marquee {
+    top: -450px;
     gap: 64px;
   }
-  .marquee-inner {
-    gap: 64px;
+
+  .marquee-inner:nth-child(2) {
+    padding-left: 496px;
+  }
+  .marquee-inner:nth-child(6) {
+    padding-right: 700px;
   }
 }
