@@ -7,56 +7,13 @@
     <title>Malibu-developers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <script type="module" crossorigin src="/Malibu-developers/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/Malibu-developers/assets/vendor-9a4a4b85.js">
-    <link rel="stylesheet" href="/Malibu-developers/assets/vendor-a553a7a5.css">
-    <link rel="stylesheet" href="/Malibu-developers/assets/index-73f2b453.css">
+    <script type="module" crossorigin src="/Malibu-developers/assets/vendor-241808fb.js"></script>
+    <script type="module" crossorigin src="/Malibu-developers/assets/main-6a9c9aaf.js"></script>
+    <link rel="stylesheet" href="/Malibu-developers/assets/main-7bd67ada.css">
+    <link rel="stylesheet" href="/Malibu-developers/assets/vendor-a776dd97.css">
   </head>
 
 <body>
-    <example>
-        <button type="button">button</button>
-        <button type="button" disabled>button disabled</button>
-        <button type="button" class="btn">button btn</button>
-        <button type="button" class="btn btn-primary">button btn</button>
-        <button type="button" class="btn btn-red">button btn</button>
-        <button type="button" class="btn btn-round">button btn</button>
-        <button type="button" class="btn btn-red btn-round">button btn</button>
-        <a href="">+ 380 98 358 24 18</a>
-        <a href="" class="btn">+ 380 98 358 24 18</a>
-        <input type="text" placeholder="clients@gmail.com">
-        <textarea name="" id="" rows="1" placeholder="comments"></textarea>
-        <div class="gradient gradient-red">
-            <div class="glass">
-                <!-- js-glass-elems -->
-            </div>
-        </div>
-        <div class="gradient gradient-green">
-            <div class="glass">
-                <!-- js-glass-elems -->
-            </div>
-        </div>
-        <div class="gradient gradient-blue">
-            <div class="glass">
-                <!-- js-glass-elems -->
-            </div>
-        </div>
-        <div class="gradient gradient-tomato">
-            <div class="glass">
-                <!-- js-glass-elems -->
-            </div>
-        </div>
-        <div class="gradient gradient-slate">
-            <div class="glass">
-                <!-- js-glass-elems -->
-            </div>
-        </div>
-        <div class="gradient gradient-orange">
-            <div class="glass">
-                <!-- js-glass-elems -->
-            </div>
-        </div>
-    </example>
     <!-- header.html -->
 <header class="page-header">
     <div class="header-container">
@@ -87,7 +44,8 @@
 
 
 <!-- mobil -->
-<div class="mobil-menu">
+<div class="mobil-menu gradient gradient-red">
+    <div class="glass"></div>
     <div class="container mobil-menu-container">
         <button class="mobil-menu-close-btn">
             <svg class="mobil-close-btn-icon" aria-label="close icon" width="28" height="28">
@@ -96,13 +54,13 @@
         </button>
         <nav class="mobil-menu-nav ">
             <ul class="mobil-menu-nav-list">
-                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" data-source="./#about-me">About me</a>
+                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" href="#about-me">About me</a>
                 </li>
-                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" data-source="./#benefits">Benefits</a>
+                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" href="#benefits">Benefits</a>
                 </li>
-                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" data-source="./#projects">Projects</a>
+                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" href="#projects">Projects</a>
                 </li>
-                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" data-source="./#fqa">FAQ</a>
+                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" href="#fqa">FAQ</a>
                 </li>
             </ul>
         </nav>
@@ -111,11 +69,10 @@
 </div>
     <main>
       <!-- hero.html -->
-<section class="section-hero glass">
+<section class="section-hero gradient gradient-red">
+    <div class="glass"></div>
     <div class="container hero-container">
-        <h1 class="hero-page-title">Hello.
-            I’m Fullstack developer
-            Lloyd Jefferson.</h1>
+        <h1 class="hero-page-title">Hello.<br> I'm Fullstack developer Lloyd Jefferson.</h1>
         <div class="hero-contact">
             <ul class="hero-social-list">
                 <li class="hero-social-list-item"><a class="hero-social-list-link"
@@ -132,128 +89,101 @@
     </div>
 </section>
       <section class="about-me">
-  <div class="container">
-    <h2 class="hiden-title">About me</h2>
-
-    <div class="about-container speech">
-      <p class="text">
-        I work with people all over the world to create impressive and
-        <span class="functional">functional</span>
-        <span class="websites">websites</span> that reflect each client's unique
-        personality.
-      </p>
-      <div class="pictures">
-        <picture>
-          <source
-            media="(max-width: 768px)"
-            srcset="
+    <div class="container">
+        <h2 class="hiden-title">About me</h2>
+        <div class="about-container speech">
+            <p class="text"> I work with people all over the world to create impressive and <span class="functional">functional</span>
+                <span class="websites">websites</span> that reflect each client's unique personality.
+            </p>
+            <div class="pictures">
+                <picture>
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="
               ../img/covers/about-me/phone.jpg    1x,
               ../img/covers/about-me/phone@2x.jpg 2x
-            "
-          />
-          <source
-            media="(max-width: 1440px)"
-            srcset="
+            " />
+                    <source
+                        media="(max-width: 1440px)"
+                        srcset="
               ../img/covers/about-me/tablet.jpg    1x,
               ../img/covers/about-me/tablet@2x.jpg 2x
-            "
-          />
-          <source
-            media="(min-width: 1440px)"
-            srcset="
+            " />
+                    <source
+                        media="(min-width: 1440px)"
+                        srcset="
               ../img/covers/about-me/desctop.jpg    1x,
               ../img/covers/about-me/desctop@2x.jpg 2x
-            "
-          />
-          <img
-            src="../img/covers/about-me/phone.jpg"
-            alt="about-me-image-phone"
-            class="about-me-img"
-          />
-        </picture>
-      </div>
-    </div>
-
-    <div class="about-container accordion">
-      <ul class="list about-accordion-container">
-        <li class="item ac">
-          <h3 class="title ac-header">
-            <button type="button" class="ac-trigger">About me</button>
-          </h3>
-          <div class="container-presentation ac-panel">
-            <p class="text presentation ac-text">
-              I am Lloyd Jefferson, a talented programmer with extensive
-              expertise in software development. I have an understanding of
-              different programming languages ​​and technologies, always ready
-              to improve my skills. I always follow the latest trends and look
-              for unconventional, creative solutions to problems. I have a high
-              level of analytical skills and am able to effectively solve even
-              the most difficult tasks encountered on the way.
-            </p>
-            <p class="text presentation ac-text">
-              Able to work both independently and in a team. I can effectively
-              cooperate with colleagues, exchanging ideas and finding optimal
-              solutions. Professional maturity allows you to calmly cope with
-              challenges and stressful situations, while maintaining a high
-              quality of work. I am always looking for opportunities for
-              self-improvement. I actively study new technologies and practices
-              to stay abreast of the latest innovations. I have a strong
-              understanding of various programming languages, frameworks and
-              architectural concepts that allow me to create efficient and
-              scalable software.
-            </p>
-          </div>
-        </li>
-        <li class="item ac">
-          <h3 class="title ac-header">
-            <button type="button" class="ac-trigger">Role</button>
-          </h3>
-          <div class="container-presentation ac-panel">
-            <ul class="text role ac-text">
-              <li>Frontend development</li>
-              <li>Headless CMS, Wordpress</li>
-              <li>Blender (enjoy)</li>
+            " />
+                    <img
+                        src="../img/covers/about-me/phone.jpg"
+                        alt="about-me-image-phone"
+                        class="about-me-img" />
+                </picture>
+            </div>
+        </div>
+        <div class="about-container accordion">
+            <ul class="list about-accordion-container">
+                <li class="item ac">
+                    <h3 class="title ac-header">
+                        <button type="button" class="ac-trigger">About me</button>
+                    </h3>
+                    <div class="container-presentation ac-panel">
+                        <p class="text presentation ac-text"> I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an understanding of different programming languages ​​and technologies, always ready to improve my skills. I always follow the latest trends and look for unconventional, creative solutions to problems. I have a high level of analytical skills and am able to effectively solve even the most difficult tasks encountered on the way. </p>
+                        <p class="text presentation ac-text"> Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas and finding optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful situations, while maintaining a high quality of work. I am always looking for opportunities for self-improvement. I actively study new technologies and practices to stay abreast of the latest innovations. I have a strong understanding of various programming languages, frameworks and architectural concepts that allow me to create efficient and scalable software. </p>
+                    </div>
+                </li>
+                <li class="item ac">
+                    <h3 class="title ac-header">
+                        <button type="button" class="ac-trigger">Role</button>
+                    </h3>
+                    <div class="container-presentation ac-panel">
+                        <ul class="text role ac-text">
+                            <li>Frontend development</li>
+                            <li>Headless CMS, Wordpress</li>
+                            <li>Blender (enjoy)</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item ac">
+                    <h3 class="title ac-header">
+                        <button type="button" class="ac-trigger">Education</button>
+                    </h3>
+                    <div class="container-presentation ac-panel">
+                        <ul class="text education ac-text">
+                            <li> 2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York </li>
+                            <li> 2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York </li>
+                            <li> 2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-          </div>
-        </li>
-        <li class="item ac">
-          <h3 class="title ac-header">
-            <button type="button" class="ac-trigger">Education</button>
-          </h3>
-          <div class="container-presentation ac-panel">
-            <ul class="text education ac-text">
-              <li>
-                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
-                York
-              </li>
-              <li>
-                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
-                School, New York
-              </li>
-              <li>
-                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
-              </li>
+        </div>
+        <div class="about-container skills about-swiper">
+            <ul class="skills-list swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="btn btn-round">HTML/CSS</div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="btn btn-round">JavaScript</div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="btn btn-round">React</div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="btn btn-round">Node.js</div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="btn btn-round">React Native</div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="btn btn-round">Soft skills</div>
+                </li>
             </ul>
-          </div>
-        </li>
-      </ul>
+            <div class="swiper-button-next">arrow icon</div>
+        </div>
     </div>
-    <div class="about-container skills swiper">
-      <ul class="skills-list swiper-wrapper">
-        <li class="swiper-slide">HTML/CSS</li>
-        <li class="swiper-slide">JavaScript</li>
-        <li class="swiper-slide">React</li>
-        <li class="swiper-slide">Node.js</li>
-        <li class="swiper-slide">React Native</li>
-        <li class="swiper-slide">Soft skills</li>
-      </ul>
-      <div class="swiper-pagination">пагінація</div>
-      <button class="swiper-button-prev">назад</button>
-      <div class="swiper-button-next">вперед</div>
-    </div>
-  </div>
 </section>
-
       <!-- benefits.html -->
 <section class="benefits" id="benefits">
   <div class="benefits-box">
@@ -624,9 +554,9 @@
   </section>
       <!-- work-together.html -->
 
-<div class="container work-together-cont">
+<div class="container work-together-cont" id="order">
   <div class="work-together-h2">
-    <img src="../img/covers/header/logo.png" alt="Опис зображення" />
+    <img src="../img/header/logo.png" alt="Опис зображення" />
     <h2 class="work-title">LET’S <span class="work-span">WORK</span></h2>
     <h2 class="work-title-2d-part">TOGETHER</h2>
   </div>
