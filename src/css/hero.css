@@ -1,10 +1,12 @@
+.section-hero {
+  background: url(../img/hero/glass-effect.png), url(../img/hero/rectangle.png);
+  background-position: left, center;
+  background-size: contain, cover;
+  background-repeat: no-repeat, no-repeat;
+}
 .hero-container {
   padding-top: 281px;
   padding-bottom: 32px;
-  background-image: url(../img/hero/hero.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .hero-page-title {
   font-family: 'Inter Tight', sans-serif;
@@ -58,15 +60,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  /* .hero-container {
-    background-image: linear-gradient(
-      90deg,
-      #1c1d20 49.68%,
-      #69292d 67.73%,
-      #ed3b44 100%
-    );
-    transform: rotate(-180deg), url(../img/hero/tab-rectangle.png);
-  } */
   .hero-page-title {
     font-size: 90px;
   }
@@ -84,3 +77,7 @@
 
 @media only screen and (min-width: 1440px) {
 }
+
+/* example {
+  display: none;
+} */
