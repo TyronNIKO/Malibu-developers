@@ -3,17 +3,17 @@
     <div class="header-container">
         <nav class="navigation">
             <ul class="header-logo">
-                <li class="header-logo-link"> <img src="../img/header/logo.png" alt="header logo image"></li>
+                <li class="header-logo-link"> <img src="./img/header/logo.png" alt="header logo image"></li>
                 <li class="header-logo-link"><a class="header-text-logo" href="#">jefferson*</a></li>
             </ul>
             <div class="header-dropdown-menu">
                 <a class="header-list-menu" href="#">Menu </a>
-                <div class="header-dropdown-menu-content">
-                    <a class="header-dropdown-menu-link" href="#about-me">About me</a>
-                    <a class="header-dropdown-menu-link" href="#benefits">Benefits</a>
-                    <a class="header-dropdown-menu-link" href="#projects">Projects</a>
-                    <a class="header-dropdown-menu-link" href="#fqa">FAQ</a>
-                </div>
+                <ul class="header-dropdown-menu-content visually-hidden">
+                    <li><a class="header-dropdown-menu-link" href="#about-me">About me</a></li>
+                    <li><a class="header-dropdown-menu-link" href="#benefits">Benefits</a></li>
+                    <li><a class="header-dropdown-menu-link" href="#projects">Projects</a></li>
+                    <li><a class="header-dropdown-menu-link" href="#faq">FAQ</a></li>
+                </ul>
             </div>
             <a class="header-list-order" href="#order"> Order the project </a>
             <button class="burger-menu" type="button">
@@ -28,22 +28,22 @@
 
 
 <!-- mobil -->
-<div class="mobil-menu is-open">
+<div class="mobil-menu">
     <div class="container mobil-menu-container">
         <button class="mobil-menu-close-btn">
             <svg class="mobil-close-btn-icon" aria-label="close icon" width="28" height="28">
                 <use href="../img/header/icons-header/close-btn.svg"></use>
             </svg>
         </button>
-        <nav class="mobil-menu-nav">
+        <nav class="mobil-menu-nav ">
             <ul class="mobil-menu-nav-list">
-                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" href="#about-me">About me</a>
+                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" data-source="./#about-me">About me</a>
                 </li>
-                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" href="#benefits">Benefits</a>
+                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" data-source="./#benefits">Benefits</a>
                 </li>
-                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" href="#projects">Projects</a>
+                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" data-source="./#projects">Projects</a>
                 </li>
-                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" href="#fqa">FAQ</a>
+                <li class="mobil-menu-nav-item"><a class="mobil-menu-nav-link" data-source="./#fqa">FAQ</a>
                 </li>
             </ul>
         </nav>

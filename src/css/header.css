@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 999;
   width: 100%;
 }
 
@@ -34,6 +34,10 @@
 .header-list-menu {
   display: none;
 }
+/* .header-dropdown-menu-content {
+  display: none;
+} */
+
 .header-list-order {
   display: none;
 }
@@ -85,7 +89,11 @@
 }
 
 .header-dropdown-menu-content {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
   position: absolute;
   min-width: 67px;
   z-index: 1;
@@ -107,7 +115,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9999;
   width: 100%;
   height: 100%;
   background-color: #242527;
@@ -116,16 +124,28 @@
   visibility: hidden;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: url(../img/hero/tab-rectangle.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-/* .mobil-menu.is-open {
+
+@media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+  .mobil-menu {
+    background: url(../img/hero/tab-rectangle@2x.jpg);
+  }
+}
+
+.mobil-menu.is-open {
   opacity: 1;
   visibility: visible;
-} */
+}
 
 .mobil-menu-container {
   position: relative;
   padding-top: 32px;
   padding-left: 16px;
+  padding-right: 16px;
 }
 .mobil-menu-close-btn {
   position: absolute;
