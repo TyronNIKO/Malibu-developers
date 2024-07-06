@@ -1,8 +1,13 @@
 .section-hero {
-  background: url(../img/hero/glass-effect.png), url(../img/hero/rectangle.png);
-  background-position: left, center;
-  background-size: contain, cover;
-  background-repeat: no-repeat, no-repeat;
+  background: url(../img/hero/tab-rectangle.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+  .section-hero {
+    background: url(../img/hero/tab-rectangle@2x.jpg);
+  }
 }
 .hero-container {
   padding-top: 281px;
@@ -76,8 +81,16 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .section-hero {
+    background: url(../img/hero/desk-rectangle.jpg);
+  }
 }
 
+@media only screen and (min-resolution: 192dpi) and (min-width: 1440px) {
+  .section-hero {
+    background: url(../img/hero/desk-rectangle@2x.jpg);
+  }
+}
 /* example {
   display: none;
 } */
