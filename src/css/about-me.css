@@ -138,14 +138,6 @@
   letter-spacing: -0.02em;
   color: #fafafa;
 }
-/* styles scills */
-.about-me .about-container.skills {
-}
-.about-me .about-container.skills .skills-list {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
 /* media */
 @media only screen and (min-width: 768px) {
   .about-me .speech {
@@ -197,4 +189,32 @@
     width: 612px;
     height: 320px;
   }
+}
+/* swiper */
+.about-me .swiper {
+  position: relative;
+  max-width: 375px;
+  overflow: hidden;
+}
+.about-me .swiper-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  width: 260px;
+  height: 130px;
+  overflow: hidden;
+}
+.about-me .swiper-slide {
+  width: calc(100% / 1);
+}
+.about-me .swiper-button-prev {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about-me .swiper-button-next {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
