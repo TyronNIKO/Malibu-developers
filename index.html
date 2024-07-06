@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Malibu-developers/assets/favicon-2b67835f.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Malibu-developers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-  <script type="module" crossorigin src="/Malibu-developers/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/Malibu-developers/assets/vendor-dae45302.js">
-  <link rel="stylesheet" href="/Malibu-developers/assets/vendor-a553a7a5.css">
-  <link rel="stylesheet" href="/Malibu-developers/assets/index-c6f66948.css">
-</head>
+    <script type="module" crossorigin src="/Malibu-developers/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/Malibu-developers/assets/vendor-dae45302.js">
+    <link rel="stylesheet" href="/Malibu-developers/assets/vendor-a553a7a5.css">
+    <link rel="stylesheet" href="/Malibu-developers/assets/index-ddb0435a.css">
+  </head>
 
 <body>
     <example>
@@ -111,7 +110,7 @@
     </div>
 </div>
     <main>
-        <!-- hero.html -->
+      <!-- hero.html -->
 <section class="section-hero">
     <div class="container hero-container">
         <h1 class="hero-page-title">Hello.
@@ -128,9 +127,115 @@
         </div>
     </div>
 </section>
-        <!-- about-me.html -->
-about-me.html
-        <!-- benefits.html -->
+      <section class="about-me">
+  <div class="container">
+    <h2 class="hiden-title">About me</h2>
+    <div class="about-container speech">
+      <h3 class="hiden-title">Speech</h3>
+      <p class="text">
+        I work with people all over the world to create impressive and
+        <span class="functional">functional</span>
+        <span class="websites">websites</span> that reflect each client's unique
+        personality.
+      </p>
+      <div class="pictures">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ../img/covers/about-me/phone.jpg    1x,
+              ../img/covers/about-me/phone@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 1440px)"
+            srcset="
+              ../img/covers/about-me/tablet.jpg    1x,
+              ../img/covers/about-me/tablet@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ../img/covers/about-me/desctop.jpg    1x,
+              ../img/covers/about-me/desctop@2x.jpg 2x
+            "
+          />
+          <img
+            src="../img/covers/about-me/phone.jpg"
+            alt="about-me-image-phone"
+            class="about-me-img"
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="about-container acordeon">
+      <h3 class="hiden-title">Description</h3>
+      <ul class="list">
+        <li class="item">
+          <h4 class="title">About me</h4>
+          <div class="container-presentation">
+            <p class="text presentation">
+              I am Lloyd Jefferson, a talented programmer with extensive
+              expertise in software development. I have an understanding of
+              different programming languages ​​and technologies, always ready
+              to improve my skills. I always follow the latest trends and look
+              for unconventional, creative solutions to problems. I have a high
+              level of analytical skills and am able to effectively solve even
+              the most difficult tasks encountered on the way.
+            </p>
+            <p class="text presentation">
+              Able to work both independently and in a team. I can effectively
+              cooperate with colleagues, exchanging ideas and finding optimal
+              solutions. Professional maturity allows you to calmly cope with
+              challenges and stressful situations, while maintaining a high
+              quality of work. I am always looking for opportunities for
+              self-improvement. I actively study new technologies and practices
+              to stay abreast of the latest innovations. I have a strong
+              understanding of various programming languages, frameworks and
+              architectural concepts that allow me to create efficient and
+              scalable software.
+            </p>
+          </div>
+        </li>
+        <li class="item">
+          <h4 class="title">Role</h4>
+          <ul class="text role">
+            <li>Frontend development</li>
+            <li>HeadlessCMS,Wordpress</li>
+            <li>Blender(enjoy)</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h4 class="title">Education</h4>
+          <ul class="text education">
+            <li>
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </li>
+            <li>
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </li>
+            <li>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="about-container scills">
+      <ul class="scills-list">
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node. js</li>
+        <li>React Native</li>
+        <li>Soft skills</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <!-- benefits.html -->
 <section class="benefits" id="benefits">
   <div class="benefits-box">
     <h2 class="benefits-title">Benefits of working with me</h2>
@@ -192,7 +297,7 @@ about-me.html
   </div>
 </section>
 
-        <!-- projects.html -->
+      <!-- projects.html -->
 <section>
     <div class="top-screen">
         <div class="">
@@ -231,7 +336,7 @@ about-me.html
         
     </div>
 </section>
-        <!-- faq.html -->
+      <!-- faq.html -->
 <section class="section fqa" id="section-faq">
     <div class="fqa-container container">
         <h2 class="faq-title-h2">FAQ</h2>
@@ -352,7 +457,7 @@ about-me.html
         </div>
     </div>
 </section>
-        <!-- covers.html -->
+      <!-- covers.html -->
 <section id="covers">
   <div class="marquee container">
     <h2 class="visually-hidden">Covers</h2>
@@ -465,7 +570,7 @@ about-me.html
   </div>
 </section>
 
-        <section class="reviews-section" id="reviews">
+      <section class="reviews-section" id="reviews">
     <div class="container">
       <h2 class="reviews-title">Reviews</h2>
       <div class="swiper reviews-wrapper">
@@ -486,7 +591,7 @@ about-me.html
       </div>
     </div>
   </section>
-        <!-- work-together.html -->
+      <!-- work-together.html -->
 
 
 <body>
@@ -521,6 +626,5 @@ about-me.html
     </div>
     </main>
     
-</body>
-
+  </body>
 </html>
