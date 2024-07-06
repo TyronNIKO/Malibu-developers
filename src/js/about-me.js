@@ -1,6 +1,4 @@
-import accordion from 'accordion-js';
-jQuery(document).ready(function ($) {
-  $('#my-accordion').accordionjs();
-});
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
-console.log('hello');
+new Accordion('.about-accordion-container');
