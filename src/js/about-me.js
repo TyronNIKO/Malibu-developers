@@ -19,5 +19,4 @@ var swiper = new Swiper('.swiper', {
   keyboard: {
     enabled: true, // Взаємодія з клавіатурою
   },
-  // Додаткові опції можна додати за потреби
 });
