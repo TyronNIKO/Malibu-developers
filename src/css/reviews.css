@@ -1,0 +1,145 @@
+/* mobile fluid layout, Резиновая верстка до 375px*/
+
+.reviews-section {
+  max-width: 374.98px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 64px 0 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-section {
+    max-width: 768px;
+    padding: 96px 0 96px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews-section {
+    max-width: 1440px;
+    padding: 164px 0 164px;
+  }
+}
+
+.reviews-title {
+  /* font-size: 16px; */
+  font-weight: 600;
+  /* line-height: 1.5;
+      letter-spacing: -0.02em; */
+  text-transform: uppercase;
+
+  color: #fafafa66;
+  margin-bottom: 32px;
+}
+
+.reviews-list {
+  margin-bottom: 32px;
+}
+
+.reviews-item {
+  min-height: 302px;
+  padding: 32px 24px;
+  border: 1px solid #fafafa33;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-item {
+    max-width: 344px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews-item {
+    max-width: 332px;
+  }
+}
+
+.reviews-img {
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 32px;
+}
+
+.reviews-subtitle {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-top: 8px;
+}
+
+.reviews-text {
+  overflow: hidden;
+  color: #fafafa99;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reviews-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #fafafa80;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  background-color: #1c1d20;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviews-btn-left-icon {
+  transform: rotate(180deg);
+}
+
+.reviews-btn:focus,
+.reviews-btn:hover {
+  background-color: var(--light-grey);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-btn {
+    width: 66px;
+    height: 66px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews-btn {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.btn-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke-width: 2px;
+  fill: #fafafa;
+  stroke: #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.reviews-btn:disabled {
+  border: 1px solid #fafafa33;
+  cursor: no-drop;
+}
+
+.reviews-btn:disabled .btn-icon {
+  stroke: #3b3b3b;
+}
