@@ -15,7 +15,6 @@
   overflow: hidden;
   height: 508px;
   min-width: 320px;
-  background-color: var(--Background);
   background-image: url(/img/covers/elements_vectors.png);
   background-size: cover;
 }
