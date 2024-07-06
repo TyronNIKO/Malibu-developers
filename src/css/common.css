@@ -51,7 +51,8 @@
 }
 .gradient {
   width: 100%;
-  height: 100px;
+  height: 100%;
+  background-repeat: no-repeat;
 }
 .gradient-red {
   background: var(--gradient-red);
@@ -99,6 +100,7 @@ body {
   margin: 0 auto;
   padding: 0 16px;
 }
+
 @media only screen and (min-width: 375px) {
   .container {
     max-width: 100%;

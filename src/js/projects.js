@@ -1,39 +1,76 @@
-import Swiper from "swiper";
 
 
-const refs = {
-    leftButton: document.querySelector('.swiper-button-prev'),
-    rightButton: document.querySelector('.swiper-button-next')
-};
+// core version + navigation, pagination modules:
+import Swiper from 'swiper';
+import { Keyboard, Mousewheel, Navigation} from 'swiper/modules';
+// import Swiper and modules styles
+import 'swiper/css';
 
-
+// init Swiper:
 const swiper = new Swiper('.swiper', {
-  direction: 'horizontal', // Set direction (horizontal or vertical)
-  loop: true, // Enable looping
-  pagination: {
-    el: '.swiper-pagination', // Add pagination
-  },
+  modules: [Navigation, Mousewheel, Keyboard],
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+
+  // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next', // Add navigation buttons
+    nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  scrollbar: {
-    el: '.swiper-scrollbar', // Add scrollbar if needed
+  
+  mousewheel: {
+    invert: true,
   },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
+  slidesPerView: 1,
+  spaceBetween: 20,
+
+  breakpoints: {
+    768: {
+      
+    },
+
+    1440: {
+      direction: 'horizontal',
+    },
+  },
+
+  navigation: {
+    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    preventClicks: false,
+  },
+  
+  // reachBeginning: document.querySelector('swiper-button-prev').disabled = true,
+  //reachEnd: document.querySelector('swiper-button-next').classList.add('.disabled'), 
+  
 });
 
 
- const theSwiper = document.querySelector('.swiper').swiper;
+
+
+
+
+
+
+
+
+
+
+ //const theSwiper = document.querySelector('.swiper').swiper;
 
 // Now you can use all slider methods like
 
 
-refs.rightButton.addEventListener('click', () => {
+/* refs.rightButton.addEventListener('click', () => {
     theSwiper.slideNext()
     
 })
 refs.leftButton.addEventListener('click', () => {
     theSwiper.slidePrev()
-})
-
-console.log("sads");
+}) */

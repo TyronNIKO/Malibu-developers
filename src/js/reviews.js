@@ -1,7 +1,6 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-
 import Swiper from 'swiper';
 import 'swiper/css';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
@@ -81,7 +80,7 @@ const renderReviews = async () => {
   <div class="swiper-slide">
   <li class="reviews-item " data="${_id}">
   <img class="reviews-img" src="${avatar_url}" alt="${author}"/>
-  
+
   <p class="reviews-text">${review}</p>
   <h2 class="reviews-subtitle">${author}</h2>
 
