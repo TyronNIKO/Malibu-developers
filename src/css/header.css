@@ -35,21 +35,10 @@
   display: none;
   padding: 10px;
 }
-/* .header-dropdown-menu-content {
-  display: none;
-} */
 
 .header-list-order {
   display: none;
 }
-/* @media only screen and (max-width: 767px) {
-  .header-logo {
-    display: none;
-  }
-  .burger-menu {
-    display: none;
-  }
-} */
 
 @media only screen and (min-width: 768px) {
   .header-container {
@@ -81,13 +70,12 @@
 
 .header-dropdown-menu {
   position: relative;
-  color: #fafafa;
+  /* color: #fafafa;
   font-weight: 500;
   font-size: 16px;
-  font-family: 'Inter Tight', sans-serif;
-  letter-spacing: -0.02em;
+  font-family: 'Inter Tight', sans-serif; */
+  /* letter-spacing: -0.02em; */
   text-decoration: underline;
-
   text-decoration-skip-ink: none;
 }
 
@@ -118,7 +106,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 99999;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -131,10 +119,10 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+/* @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
   .mobil-menu {
   }
-}
+} */
 
 .mobil-menu.is-open {
   opacity: 1;
@@ -143,9 +131,6 @@
 
 .mobil-menu-container {
   position: relative;
-  padding-top: 32px;
-  padding-right: 16px;
-  padding-left: 16px;
 }
 .mobil-menu-close-btn {
   position: absolute;
@@ -184,13 +169,31 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
+.mobil-menu-nav-link:hover,
+.mobil-menu-nav-link:focus {
+  color: #ed3b44;
+}
 .mobil-menu-order-btn {
-  display: block;
+  display: flex;
   min-width: 164px;
-  margin-right: auto;
-  margin-left: auto;
+  font-size: 14px;
   padding: 14px 31px;
   border-radius: 60px;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  border: transparent;
+  background-color: #ed3b44;
+}
+
+.mobil-menu-order-btn,
+.mobil-menu-order-btn {
+  background-color: rgba(var(--color-red-dark), 1);
+}
+
+.mob-menu-overflow {
+  overflow: hidden;
+  margin-right: 17px;
 }
 @media only screen and (min-width: 1440px) {
 }
