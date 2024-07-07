@@ -35,8 +35,8 @@
 }
 /* classys from me */
 .about-me {
-}
-.about-me .container {
+  /* margin-top: 64px; */
+  padding-top: 64px;
 }
 .about-container:not(:last-child) {
   margin-bottom: 32px;
@@ -55,7 +55,7 @@
 }
 /* style speech */
 .about-me .speech {
-  max-width: 375px;
+  /* max-width: 375px; */
   border-radius: 24px;
 }
 
@@ -82,9 +82,6 @@
 .about-me .pictures {
   border-radius: 24px;
   background: #1c1d20;
-}
-.about-me-img {
-  border-radius: 24px;
 }
 .about-me .about-container.accordion {
 }
@@ -138,49 +135,40 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
 }
+.about-me .ac-text {
+  width: auto;
+}
+.about-me-img {
+  width: 100%;
+  border-radius: 24px;
+}
 /* swiper */
-.about-me {}
 .about-me .about-swiper {
+  max-width: 275px;
   position: relative;
-    margin: 0 32px;
-  /* overflow: hidden; */
-  /* width: 343px; */
-}
-.about-me .about-swiper .btn-round {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* .about-me .swiper-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 260px;
-  height: 130px;
+  margin: 0 32px;
   overflow: hidden;
 }
 .about-me .swiper-slide {
+  background-color: #ed3b44;
+  border-radius: 100%;
+  border: none;
+  width: 130px;
+  height: 130px;
+}
+.about-me .about-swiper .btn-round {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 100%;
-  width: calc(50% - 10px);
-  height: 130px;
-  background-color: #ed3b44;
 }
-.about-me .swiper-button-prev {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
 .about-me .swiper-button-next {
   position: absolute;
-
-  right: 0;
+  width: 28px;
+  height: 28px;
+  right: -10px;
 }
 /* media */
 @media only screen and (min-width: 768px) {
-
   .about-me .speech {
     max-width: 768px;
   }
@@ -201,22 +189,19 @@
   .container-presentation {
     gap: 16px;
   }
+  .about-me .ac-text {
+    width: auto;
+  }
   /* swiper */
   .about-me .about-swiper {
-      margin: 0;
-    padding-right: 104px;
   }
-  .about-me .about-swiper .swiper-wrapper {
-    /* overflow: hidden; */
-  }
-  /* .about-me .swiper {
-    width: 704px;
-  } */
-  /* .about-me .swiper-wrapper {
-    display: flex;
-    width: 600px;
+  .about-me .about-swiper {
+    max-width: 600px;
     height: 200px;
-  } */
+    padding-right: 104px;
+    margin: 0;
+    margin: 0 32px;
+  }
   .about-me .about-swiper .btn-round {
     max-width: 200px;
   }
@@ -225,6 +210,9 @@
 @media only screen and (min-width: 1440px) {
   .about-container:not(:last-child) {
     margin-bottom: 96px;
+  }
+  .about-me {
+    padding-top: 96px;
   }
   .about-me .speech {
     display: flex;
@@ -253,5 +241,4 @@
   .about-me .about-swiper {
     padding-right: 112px;
   }
-
 }
