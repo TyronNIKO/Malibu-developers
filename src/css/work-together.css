@@ -172,7 +172,7 @@ input:focus {
 }
 
 .modal {
-  /* display: none; */
+  display: none;
   position: absolute;
   z-index: 9999;
   left: 0;
@@ -180,13 +180,8 @@ input:focus {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  padding-right: 16px;
-  padding-left: 16px;
-  padding-top: 138px;
-  padding-bottom: 138px;
   box-sizing: border-box;
 }
-
 .modal-content {
   position: absolute;
   top: 50%;
@@ -194,7 +189,10 @@ input:focus {
   transform: translate(-50%, -50%);
   border: 1px solid rgba(250, 250, 250, 0.1);
   border-radius: 20px;
-  padding: 64px 32px;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 64px;
+  padding-top: 64px;
   width: 343px;
   height: 276px;
   box-sizing: border-box;
@@ -202,14 +200,16 @@ input:focus {
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+.modal-text {
+  width: 279px;
+  height: 148px;
+}
 .modal-message-1 {
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.06em;
   text-align: center;
-  margin-bottom: 16px;
-  width: 279px;
 }
 .modal-message-2 {
   font-weight: 500;
@@ -217,14 +217,28 @@ input:focus {
   line-height: 150%;
   letter-spacing: -0.02em;
   text-align: center;
-  width: 279px;
+  margin-top: 16px;
 }
-.close {
+.close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
+  top: 20px;
+  right: 20px;
+  padding: 5.5px;
+  width: 22px;
+  height: 22px;
+  background: none;
+  border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.close-btn svg {
+  width: 11px;
+  height: 11px;
+  stroke-width: 2px;
+  stroke: var(--main-text);
 }
 
 @media only screen and (min-width: 768px) {
@@ -297,6 +311,30 @@ input:focus {
   .success-message {
     padding-left: 0;
   }
+  .modal-content {
+    padding-top: 64px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 64px;
+    width: 492px;
+    height: 246px;
+  }
+  .modal-text {
+    width: 364px;
+    height: 118px;
+  }
+  .modal-message-1 {
+    white-space: nowrap;
+  }
+  .close-btn {
+    padding: 6px;
+    width: 24px;
+    height: 24px;
+  }
+  .close-btn svg {
+    width: 12px;
+    height: 12px;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .work-together-cont {
@@ -337,5 +375,10 @@ input:focus {
   .error-message,
   .success-message {
     padding-left: 196px;
+  }
+  .close-btn {
+    padding: 6px;
+    width: 24px;
+    height: 24px;
   }
 }

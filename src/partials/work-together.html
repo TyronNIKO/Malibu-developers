@@ -2,7 +2,11 @@
 
 <div class="container work-together-cont" id="order">
   <div class="work-together-h2">
-    <img src="../img/header/logo.png" alt="Опис зображення" />
+    <img
+      id="work-together"
+      src="../img/covers/header/logo.png"
+      alt="Опис зображення"
+    />
     <h2 class="work-title">LET’S <span class="work-span">WORK</span></h2>
     <h2 class="work-title-2d-part">TOGETHER</h2>
   </div>
@@ -43,12 +47,41 @@
 
   <div id="modal" class="modal">
     <div class="modal-content">
-      <span class="close">&times;</span>
-      <p class="modal-message-1">Thank you for interest in cooperation!</p>
-      <p class="modal-message-2">
-        The manager will contact you shortly to discuss further details and
-        opportunities for cooperation. Please stay in touch.
-      </p>
+      <div class="work-close-btn">
+        <button class="close-btn">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.5 1.5L12.5 12.5"
+              stroke="#FAFAFA"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M12.5 1.5L1.5 12.5"
+              stroke="#FAFAFA"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="modal-text">
+        <p class="modal-message-1">
+          Thank you for your interest in cooperation!
+        </p>
+        <p class="modal-message-2">
+          The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch.
+        </p>
+      </div>
     </div>
   </div>
 </div>
