@@ -12,6 +12,10 @@ var swiper = new Swiper('.swiper', {
     el: '.swiper-pagination', // Елемент для пагінації
     clickable: true, // Можливість клікати на пагінаційні точки
   },
+  scrollbar: {
+    el: '.swiper-scrollbar', // Селектор для скролбару
+    hide: false, // Показувати скролбар завжди (за замовчуванням true, якщо не вказано)
+  },
   navigation: {
     nextEl: '.swiper-button-next', // Кнопка "Вперед"
     prevEl: '.swiper-button-prev', // Кнопка "Назад"
