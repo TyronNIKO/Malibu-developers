@@ -17,7 +17,9 @@
     background: transparent;
     cursor: pointer;
 }
-
+.faq-title-paragraph{
+    max-width: 485px;
+}
 .accordion-container.faq {
     display: grid;
     grid-template-columns: 1fr;
@@ -76,7 +78,9 @@ p.ac-text {
     gap: 44px;
 }
 
-
+.faq-title-paragraph{
+   max-width:485px;
+}
 
 .accordion-container.faq .ac-trigger.faq-btn {
     cursor: pointer;
@@ -107,7 +111,7 @@ p.ac-text {
     padding-right: 24px;
 }
 
-.faq-list .faq-item .ac-comment .faq-paragraph {
+.faq-list .faq-item .ac-comment .faq-paragraph{
     font-family: 'Inter Tight', sans-serif;
     font-weight: 500;
     font-size: 16px;
