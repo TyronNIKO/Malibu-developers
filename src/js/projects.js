@@ -1,13 +1,11 @@
-
-
 // core version + navigation, pagination modules:
 import Swiper from 'swiper';
-import { Keyboard, Mousewheel, Navigation} from 'swiper/modules';
+import { Keyboard, Mousewheel, Navigation } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
 
 // init Swiper:
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.projects-slide', {
   modules: [Navigation, Mousewheel, Keyboard],
   // Optional parameters
   direction: 'horizontal',
@@ -18,7 +16,7 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  
+
   mousewheel: {
     invert: true,
   },
@@ -31,9 +29,7 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 20,
 
   breakpoints: {
-    768: {
-      
-    },
+    768: {},
 
     1440: {
       direction: 'horizontal',
@@ -45,27 +41,14 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     preventClicks: false,
   },
-  
+
   // reachBeginning: document.querySelector('swiper-button-prev').disabled = true,
-  //reachEnd: document.querySelector('swiper-button-next').classList.add('.disabled'), 
-  
+  //reachEnd: document.querySelector('swiper-button-next').classList.add('.disabled'),
 });
 
-
-
-
-
-
-
-
-
-
-
-
- //const theSwiper = document.querySelector('.swiper').swiper;
+//const theSwiper = document.querySelector('.swiper').swiper;
 
 // Now you can use all slider methods like
-
 
 /* refs.rightButton.addEventListener('click', () => {
     theSwiper.slideNext()

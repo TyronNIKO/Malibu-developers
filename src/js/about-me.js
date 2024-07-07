@@ -4,7 +4,7 @@ import Swiper from 'swiper/bundle';
 import { Navigation } from 'swiper/modules';
 // import Swiper styles
 import 'swiper/css';
-import 'swiper/css/navigation';
+// import 'swiper/css/navigation';
 
 new Accordion('.about-accordion-container', {
   showMultiple: true,
