@@ -4,9 +4,12 @@
   | default @import url()
   |============================
 */
-@import 'node_modules/modern-normalize/modern-normalize.css';
+/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
 @import url('./reset.css');
+@import url('./fonts.css');
 @import url('./common.css');
+@import url('./buttons.css');
+@import url('./forms.css');
 @import url('./header.css');
 @import url('./about-me.css');
 @import url('./benefits.css');

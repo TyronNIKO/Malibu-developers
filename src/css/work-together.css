@@ -1,0 +1,341 @@
+.work-together-cont {
+  width: 375px;
+  height: 552px;
+  background-color: #1c1d20;
+  position: relative;
+}
+.work-together-h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 32px;
+}
+.work-together-h2 img {
+  width: 44px;
+  height: 44px;
+}
+.work-title {
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.work-title-2d-part {
+  margin-bottom: 63px;
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.work-span {
+  color: #ed3b44;
+}
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+  position: relative;
+}
+input {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.2);
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  box-sizing: border-box;
+  background-color: #1c1d20;
+  width: 343px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+}
+.input-error {
+  border-bottom: 1px solid #e74a3b;
+}
+.input-valid {
+  border-bottom: 1px solid #3cbc81;
+}
+
+.error-message {
+  display: none;
+  color: #e74a3b;
+  font-size: 14px;
+  margin-top: 4px;
+  position: absolute;
+  font-weight: 500;
+
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  bottom: -20px; /* Зміщення повідомлення вниз */
+  left: 0;
+}
+.success-message {
+  display: none;
+  color: green;
+  font-size: 14px;
+  margin-top: 4px;
+
+  position: absolute;
+  font-weight: 500;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  bottom: -20px; /* Зміщення повідомлення вниз */
+  left: 0;
+}
+input::placeholder {
+  color: #888;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+input[type='email'],
+input[type='comment'] {
+  text-align: left;
+  color: #fafafa;
+}
+input:focus {
+  outline: none;
+}
+.work-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: #ed3b44;
+  color: #fafafa;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  margin-top: 16px;
+}
+.work-button:hover {
+  background-color: #e0373f;
+}
+.work-links-info {
+  margin-top: 64px;
+  margin-right: 59px;
+  display: flex;
+  gap: 4px;
+}
+.work-mail {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px 12px;
+  width: 178px;
+  height: 37px;
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  display: inline-block;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+}
+.work-tel {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px 12px;
+  width: 118px;
+  height: 37px;
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  display: inline-block;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.modal {
+  /* display: none; */
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 138px;
+  padding-bottom: 138px;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  padding: 64px 32px;
+  width: 343px;
+  height: 276px;
+  box-sizing: border-box;
+  background-color: #1c1d20;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.modal-message-1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 16px;
+  width: 279px;
+}
+.modal-message-2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  width: 279px;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .work-together-cont {
+    width: 768px;
+    height: 636px;
+  }
+  .work-together-h2 {
+    gap: 0px;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding-top: 85px;
+  }
+  .work-together-h2 img {
+    width: 70px;
+    height: 70px;
+  }
+  .work-title {
+    font-size: 64px;
+  }
+  .work-title-2d-part {
+    font-size: 64px;
+    margin-bottom: 18px;
+  }
+  .form-inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0;
+    gap: 32px;
+    margin-bottom: 18px;
+  }
+  input {
+    width: 245px;
+    height: 44px;
+    margin: 0;
+    position: relative;
+    text-align: left;
+  }
+  .input-comment {
+    margin-left: 0;
+  }
+  .work-button {
+    width: 150px;
+    height: 150px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .work-links-info {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 8px;
+  }
+  .work-mail {
+    padding: 18px 32px;
+    width: 239px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .work-tel {
+    padding: 18px 32px;
+    width: 171px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .error-message,
+  .success-message {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .work-together-cont {
+    width: 1440px;
+    background-image: url(../img/work-together/elements.png);
+    background-size: 400px auto;
+    background-repeat: no-repeat;
+    background-position: calc(100% + 32px) top;
+  }
+  .work-together-h2 {
+    width: 542px;
+    margin-left: 196px;
+  }
+  .form-inputs {
+    margin: 0;
+    gap: 32px;
+  }
+  input {
+    width: 390px;
+    margin-left: 196px;
+  }
+  .input-comment {
+    margin-left: 0;
+    margin-right: 54px;
+  }
+  .work-button {
+    width: 150px;
+    height: 150px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .work-links-info {
+    margin-top: 18px;
+    margin-left: 196px;
+    margin-right: 0;
+  }
+  .error-message,
+  .success-message {
+    padding-left: 196px;
+  }
+}

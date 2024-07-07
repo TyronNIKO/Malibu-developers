@@ -1,15 +1,91 @@
+:root {
+  /* colors */
+  --color-black: 28, 29, 32;
+  --color-white: 250, 250, 250;
+  --color-red: 237, 59, 68;
+  --color-red-dark: 224, 55, 63;
+
+  --color-green: 198, 227, 39;
+  --color-blue: 0, 35, 232;
+  --color-tomato: 230, 83, 60;
+  --color-slate: 43, 68, 65;
+  --color-orange: 255, 127, 8;
+
+  /* gradients */
+  --gradient-red: linear-gradient(
+    -90deg,
+    #1c1d20 50%,
+    #69292d 68%,
+    rgba(var(--color-red), 1) 100%
+  );
+  --gradient-green: linear-gradient(
+    -90deg,
+    #1c1d20 50%,
+    #596808 68%,
+    rgba(var(--color-green), 0.76) 100%
+  );
+  --gradient-blue: linear-gradient(
+    -90deg,
+    #1c1d20 50%,
+    #001958 68%,
+    rgba(var(--color-blue), 1) 100%
+  );
+  --gradient-tomato: linear-gradient(
+    -90deg,
+    #1c1d20 50%,
+    #9f3626 68%,
+    rgba(var(--color-tomato), 1) 100%
+  );
+  --gradient-slate: linear-gradient(
+    -90deg,
+    #1c1d20 50%,
+    #1e3633 68%,
+    rgba(var(--color-slate), 1) 100%
+  );
+  --gradient-orange: linear-gradient(
+    -90deg,
+    #1c1d20 50%,
+    #ac5300 68%,
+    rgba(var(--color-orange), 1) 100%
+  );
+}
+.gradient {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.gradient-red {
+  background: var(--gradient-red);
+}
+.gradient-green {
+  background: var(--gradient-green);
+}
+.gradient-blue {
+  background: var(--gradient-blue);
+}
+.gradient-tomato {
+  background: var(--gradient-tomato);
+}
+.gradient-slate {
+  background: var(--gradient-slate);
+}
+.gradient-orange {
+  background: var(--gradient-orange);
+}
+
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Inter Tight', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  background-color: rgba(var(--color-black), 1);
+  color: rgba(var(--color-white), 1);
   font-weight: 500;
+  font-size: 16px;
+  font-family: 'Inter Tight', sans-serif;
+  line-height: 1.5;
   letter-spacing: -0.02em;
-  color: var(--Main_text);
-  background-color: var(--Background);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,13 +94,18 @@ body {
 }
 /* Mobile */
 .container {
+  width: 100%;
   min-width: 320px;
   max-width: 375px;
-  width: 100%;
-  padding: 0 16px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
+@media only screen and (min-width: 375px) {
+  .container {
+    max-width: 100%;
+  }
+}
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .container {
@@ -38,10 +119,4 @@ body {
   .container {
     max-width: 1440px;
   }
-}
-
-:root {
-  /* colors */
-  --Background: #1c1d20;
-  --Main_text: #fafafa;
 }
