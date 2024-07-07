@@ -23,25 +23,25 @@
 /*Inter Tight Medium 
  Inter Tight SemiBold*/
 
-.swiper-slide{
+.project-swiper-slide{
     
     background-color: #fafafa;
     border-radius: 24px;
 }
 
 @media screen and (min-width: 768px) {
-    .swiper-slide {/*same*/}
+    .project-swiper-slide {/*same*/}
 }
 
 
 @media screen and (min-width: 1440px) {
-    .swiper-slide {
+    .project-swiper-slide {
             display: flex !important;
             /*min-width: 100%;*/
         }
 }
 
-.intro{
+.project-intro{
     font-family: "Inter Tight", sans-serif;
         font-weight: 600;
         font-size: 16px;
@@ -54,7 +54,7 @@
 
 
 @media screen and (min-width: 768px) {
-    .intro {
+    .project-intro {
     font-family: "Inter Tight", sans-serif;
         font-weight: 600;
         font-size: 16px;
@@ -67,25 +67,25 @@
 
 
 @media screen and (min-width: 1440px) {
- .intro{/*same style*/}
+ .project-intro{/*same style*/}
 }
 
 
 
-.top-screen{
+.project-top-screen{
     padding: 32px 32px 0 32px;
 }
 
 
 @media screen and (min-width: 768px) {
-    .top-screen {
+    .project-top-screen {
             padding: 64px 64px 0 64px;
         }
 }
 
 
 @media screen and (min-width: 1440px) {
-    .top-screen {
+    .project-top-screen {
         min-width: 50% !important;
         padding: 64px 64px 0 64px;
     }
@@ -93,7 +93,7 @@
 
 
 
-.img-bg{
+.project-img-bg{
     background-color: #242527;
     padding: 100px 16px;
     border-radius: 0 0 24px 24px;
@@ -103,7 +103,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .img-bg {
+    .project-img-bg {
             background-color: #242527;
             padding: 120px 45px;
             border-radius: 0 0 24px 24px;
@@ -115,7 +115,7 @@
 
 
 @media screen and (min-width: 1440px) {
-    .img-bg {
+    .project-img-bg {
         min-width: 50% !important;
         padding: 120px 37px;
     }
@@ -162,7 +162,7 @@
 
 
 
-.one-skill {
+.project-one-skill {
     
 
     border: 1px solid rgba(28, 29, 32, 0.2);
@@ -182,7 +182,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .one-skill { 
+    .project-one-skill { 
         border: 1px solid rgba(28, 29, 32, 0.2);
         border-radius: 60px;
         padding: 18px;
@@ -192,7 +192,7 @@
 
 
 @media screen and (min-width: 1440px) {
-    .one-skill { 
+    .project-one-skill { 
         
            
     }
@@ -203,7 +203,7 @@
 
 
 
-.lang-skill{
+.project-lang-skill{
     display: flex;
     gap: 6px;
     flex-wrap: wrap;
@@ -212,14 +212,14 @@
 }
 
 @media screen and (min-width: 768px) {
-    .lang-skill{
+    .project-lang-skill{
         margin-bottom: 164px;
     }
 }
 
 
 @media screen and (min-width: 1440px) {
-    .lang-skill {
+    .project-lang-skill {
             margin-bottom: 223px;
         }
 }
@@ -229,7 +229,7 @@
 
 
 
-.style-h3{
+.project-style-h3{
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -240,7 +240,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .style-h3 {
+    .project-style-h3 {
         font-weight: 500;
         font-size: 44px;
         line-height: 100%;
@@ -249,7 +249,7 @@
 
 
 @media screen and (min-width: 1440px) {
-    .style-h3 {
+    .project-style-h3 {
     
     }
 }
@@ -257,13 +257,13 @@
 
 
 
-.btn-style{
+.project-btn-style{
     margin: 32px 0;
     padding: 13px 32px;
 }
 
 @media screen and (min-width: 768px) {
-    .btn-style {
+    .project-btn-style {
         border-radius: 60px;
         padding: 18px 50px;
         margin: 32px 0 64px 0;
@@ -273,11 +273,10 @@
 
 
 @media screen and (min-width: 1440px) {
-    .btn-style {
+    .project-btn-style {
         
     }
 }
-
 
 
 
@@ -289,9 +288,11 @@
 .swiper-button-prev{
     border: 1px solid rgba(250, 250, 250, 0.5);
         border-radius: 60px;
+
         padding: 14px;
         width: 52px;
         height: 52px;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -301,31 +302,138 @@
 .swiper-button-next{
     border: 1px solid rgba(250, 250, 250, 0.5);
         border-radius: 60px;
+
         padding: 14px;
         width: 52px;
         height: 52px;
+
         display: flex;
             justify-content: center;
             align-items: center;
 }
 
+.swiper-button-disabled {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 14px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-button-next{
+        padding: 18px;
+        width: 68px;
+        height: 68px;
+    }
+    .swiper-button-prev{
+        padding: 18px;
+        width: 68px;
+        height: 68px;
+    }
+        .swiper-button-disabled {
+            border: 1px solid rgba(250, 250, 250, 0.2);
+            padding: 18px;
+            width: 68px;
+            height: 68px;
+            
+        }
+}
+
+
+@media screen and (min-width: 1440px) {
+
+}
+
+
+
+
 .btns-style{
-    padding: 32px 0;
+    padding: 32px 0 0 0;
     display: flex;
     gap: 12px;
     justify-content: center;
 }
 
-.swiper-button-disabled{
-    border: 1px solid rgba(250, 250, 250, 0.2);
-        border-radius: 60px;
-        padding: 14px;
-        width: 52px;
-        height: 52px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+@media screen and (min-width: 768px) {
+    .btns-style {
+            padding: 64px 0 0 0;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
 }
+
+
+@media screen and (min-width: 1440px) {}
+
+
+
+
+
+/*buttons*/
+
+.team-icon-left{
+    transform: rotateY(180deg);
+}
+
+.team-icon {
+    /* //fill: #ff0f0f; */
+    display: inline-block;
+        height: 32px;
+        width: 32px;
+        background-repeat: no-repeat;
+        background-size: 32px 32px;
+}
+
+@media screen and (min-width: 768px) {}
+
+
+@media screen and (min-width: 1440px) {}
+
+
+/* .team-div-icons {
+    display: flex;
+    gap: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 8px;
+    justify-content: center;
+    height: 40px;
+}
+
+.team-icon-list {
+    width: 40px;
+    height: 40px;
+}
+ */
+/*a*/
+/* .div-icon-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+} */
+
+/* .div-icon-item:hover,
+.div-icon-item:focus {
+    background-color: #404bbf;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
 
 /*
  - tablet: з 768px;
