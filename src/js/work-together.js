@@ -1,50 +1,59 @@
-// import axios from 'axios';
-// document.addEventListener('DOMContentLoaded', function () {
-//   const modal = document.getElementById('modal');
-//   const closeModalBtn = document.querySelector('.close');
-//   const form = document.getElementById('contact-form');
+import axios from 'axios';
+// Submit btn going to modal content and clear the input after
+document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.getElementById('modal');
+  const modalContent = modal.querySelector('.modal-content');
+  const closeModalBtn = modal.querySelector('.close-btn');
+  const emailInput = document.getElementById('email');
+  const commentInput = document.getElementById('comment');
+  const successMessage = document.querySelector('.success-message');
+  const errorMessage = document.querySelector('.error-message');
 
-//   form.addEventListener('submit', function (event) {
-//     event.preventDefault();
+  function openModal() {
+    modal.style.display = 'flex';
+  }
 
-//     const formData = new FormData(form);
-//     const data = {
-//       email: formData.get('email'),
-//       comment: formData.get('comment'),
-//     };
+  function closeModal() {
+    modal.style.display = 'none';
+  }
 
-//     axios
-//       .post(' http://localhost:5175/api/getKey', data)
-//       .then(response => {
-//         if (response.status === 200) {
-//           openModal();
-//         } else {
-//           alert('111');
-//         }
-//       })
-//       .catch(error => {
-//         alert('111');
-//       });
-//   });
+  closeModalBtn.addEventListener('click', closeModal);
 
-//   closeModalBtn.addEventListener('click', function () {
-//     closeModal();
-//   });
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
 
-//   window.addEventListener('click', function (event) {
-//     if (event.target == modal) {
-//       closeModal();
-//     }
-//   });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  });
 
-//   function openModal() {
-//     modal.style.display = 'block';
-//   }
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-//   function closeModal() {
-//     modal.style.display = 'none';
-//   }
-// });
+    axios
+      .post('https://jsonplaceholder.typicode.com/posts', {
+        email: emailInput.value,
+        comment: commentInput.value,
+      })
+      .then(function (response) {
+        successMessage.style.display = 'block';
+        openModal();
+
+        emailInput.value = '';
+        commentInput.value = '';
+      })
+      .catch(function (error) {
+        errorMessage.style.display = 'block';
+      });
+  });
+});
+
+// Input border color changing and adding appropriate message
 document.addEventListener('DOMContentLoaded', function () {
   const emailInput = document.getElementById('email');
   const errorMessage = emailInput.nextElementSibling;
