@@ -4,7 +4,7 @@ function header() {
   const mobMenu = document.querySelector('.mobil-menu');
   const closeBtn = document.querySelector('.mobil-menu-close-btn');
   const dropdownMenu = document.querySelector('.header-dropdown-menu-content');
-  const dropdownLink = document.querySelectorAll('.header-dropdown-menu-item');
+  const dropdownLink = document.querySelector('.header-dropdown-menu-item');
   const hiddenMenu = document.querySelector('.mobil-menu-nav-list');
   const orderBtn = document.querySelector('.mobil-menu-order-btn');
   const bodyEl = document.querySelector('body');
@@ -27,10 +27,12 @@ function header() {
     //   console.log(menuEl.classList);
     dropdownMenu.classList.toggle('visually-hidden');
   }
-  dropdownLink.addEventListener('click', ondropdownLinkClick);
+  dropdownMenu.addEventListener('click', ondropdownLinkClick);
 
-  function ondropdownLinkClick() {
-    dropdownMenu.classList.add('visually-hidden');
+  function ondropdownLinkClick(e) {
+    if (e.target !== e.currentTarget) {
+      dropdownMenu.classList.toggle('visually-hidden');
+    }
   }
 
   closeBtn.addEventListener('click', onСloseBtnClick);
