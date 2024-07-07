@@ -7,12 +7,13 @@
 }
 
 .faq-svg {
-    min-height: 40px;
-    min-width: 40px;
+    min-height: 34px;
+    min-width: 34px;
+    padding: 7px;
     border: 1px solid rgba(250, 250, 250, 0.1);
     border-radius: 100px;
     display: block;
-    color: #fafafa;
+    stroke: #fafafa;
     background: transparent;
     cursor: pointer;
 }
@@ -23,10 +24,11 @@
 }
 
 .ac {
-    margin-top: 0;
+    margin-top: 0px;
 }
 
 .ac.faq-item {
+    margin-top: 0px;
     background-color: #1C1D20;
     border: none;
     padding: 20px 0;
@@ -48,7 +50,7 @@
 }
 
 p.ac-text {
-    width: 343px;
+    max-width: 343px;
     font-family: 'Inter Tight';
     color: #fafafa;
     font-size: 16px;
@@ -61,8 +63,6 @@ p.ac-text {
     font-family: 'Inter Tight', sans-serif;
     font-weight: 600;
     padding: 0%;
-    margin-bottom: 16px;
-    /* margin-top: 0; */
     background: none;
     text-decoration: none;
     border: none;
@@ -75,6 +75,8 @@ p.ac-text {
     justify-content: space-between;
     gap: 44px;
 }
+
+
 
 .accordion-container.faq .ac-trigger.faq-btn {
     cursor: pointer;
@@ -90,6 +92,7 @@ p.ac-text {
 .accordion-container .ac .ac-trigger:focus {
     color: #fafafa;
 }
+
 
 .ac .ac-trigger::after {
     display: none;
@@ -125,8 +128,16 @@ p.ac-text {
         font-size: 20px;
     }
 
-    .faq-paragraph {
-        width: 656px;
+    .faq-list .faq-item .ac-comment .faq-paragraph {
+        max-width: 656px;
+        padding-top: 26px;
+        padding-bottom: 24px;
+    }
+
+    .faq-svg {
+        min-height: 40px;
+        min-width: 40px;
+        padding: 10px;
     }
 
     .ac-trigger {
@@ -160,10 +171,9 @@ p.ac-text {
     }
 
     .faq-list .faq-item .ac-comment .faq-paragraph {
-
-        padding: 26px 0 20px;
+        padding: 26px 0 26px;
         text-align: left;
-        width: 656px;
+        max-width: 656px;
     }
 
     .accordion-container .ac .faq-item {
