@@ -39,6 +39,7 @@ function header() {
     closeBtn.addEventListener('click', onСloseBtnClick);
     function onСloseBtnClick() {
         mobMenu.classList.remove('is-open');
+        bodyEl.classList.remove('mob-menu-overflow');
     }
 
     orderBtn.addEventListener('click', onСloseBtnClick);
@@ -49,6 +50,7 @@ function header() {
             return;
         }
         mobMenu.classList.remove('is-open');
+        bodyEl.classList.remove('mob-menu-overflow');
         // window.location.href = e.target.dataset.source;
     }
 }
