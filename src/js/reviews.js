@@ -10,6 +10,7 @@ const swiperReviews = new Swiper('.reviews-wrapper', {
   direction: 'horizontal',
   updateOnWindowResize: true,
   slidesPerView: 1,
+  slidesPerGroup: 1,
   enabled: true,
   swipeHandler: '.reviews-item',
   speed: 300,
@@ -46,10 +47,6 @@ const swiperReviews = new Swiper('.reviews-wrapper', {
   },
 });
 
-const BASE_URL = 'https://portfolio-js.b.goit.study/api';
-const END_POINT = '/reviews';
-
-const url = `${BASE_URL}${END_POINT}`;
 let currentId = 1;
 
 const selectors = {
@@ -60,7 +57,7 @@ const selectors = {
 
 async function fetchReviews(id) {
   try {
-    const response = await axios.get(url, { params: { id } });
+    const response = await axios.get('https://portfolio-js.b.goit.study/api/reviews', { params: { id } });
 
     if (response.status !== 200) {
       throw new Error(response.status);
@@ -71,7 +68,7 @@ async function fetchReviews(id) {
   }
 }
 
-const renderReviews = async () => {
+async function renderReviews() {
   try {
     const reviews = await fetchReviews(currentId);
     const markup = reviews
@@ -96,7 +93,25 @@ const renderReviews = async () => {
       'afterbegin',
       `<p class="reviews-error-text">Not found</p>`
     );
+    showNotification(error.message);
   }
 };
 
 renderReviews();
+
+// Function: show notification
+const showNotification = msg => {
+  iziToast.settings({
+      timeout: 5000,
+      titleColor: '#fff',
+      position: 'center',
+      messageColor: '#fff',
+      icon: '',
+  });
+  iziToast.error({
+      message: msg,
+      timeout: 5000,
+      position: 'center',
+      backgroundColor: '#EF4040',
+  });
+};
