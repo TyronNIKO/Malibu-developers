@@ -11,7 +11,8 @@ button:disabled {
   border-radius: 60px;
   background-color: transparent;
   color: rgba(var(--color-white), 1);
-  transition: background-color, border-color 250ms ease-out;
+  transition: 250ms ease-out;
+  transition-property: background-color, border-color;
 }
 .btn:hover,
 .btn:focus {

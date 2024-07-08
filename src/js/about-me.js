@@ -6,8 +6,9 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 // import 'swiper/css/navigation';
 
-new Accordion('.about-accordion-container', {
-  showMultiple: true,
+new Accordion('.about-me .accordion-container', {
+    showMultiple: true,
+    openOnInit: [0],
 });
 
 // var swiper = new Swiper('.about-swiper', {
