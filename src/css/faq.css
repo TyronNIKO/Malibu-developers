@@ -17,9 +17,6 @@
     background: transparent;
     cursor: pointer;
 }
-.faq-title-paragraph{
-    max-width: 485px;
-}
 .accordion-container.faq {
     display: grid;
     grid-template-columns: 1fr;
@@ -121,7 +118,9 @@ p.ac-text {
     padding: 16px 0 20px;
     text-align: left;
 }
-
+.container {
+    margin-bottom: 164px;
+}
 @media screen and (min-width: 768px) {
     .section-fqa {
         padding: 47px 32px;
@@ -155,6 +154,9 @@ p.ac-text {
 
     .ac-panel {
         padding-right: 32px;
+    }
+    .container {
+        margin-bottom: 64px;
     }
 }
 
@@ -199,6 +201,9 @@ p.ac-text {
         border: 1px solid rgba(250, 250, 250, 0.1);
         border-right: none;
         padding-left: 32px;
+    }
+    .container {
+     margin-bottom: 106px;
     }
 
 }
