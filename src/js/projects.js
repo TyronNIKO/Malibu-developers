@@ -6,44 +6,40 @@ import 'swiper/css';
 
 // init Swiper:
 const swiper = new Swiper('.projects-slide', {
-  modules: [Navigation, Mousewheel, Keyboard],
-  // Optional parameters
-  direction: 'horizontal',
-  loop: false,
+    modules: [Navigation, Mousewheel, Keyboard],
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    // Navigation arrows
 
-  mousewheel: {
-    invert: true,
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-
-  slidesPerView: 1,
-  spaceBetween: 20,
-
-  breakpoints: {
-    768: {},
-
-    1440: {
-      direction: 'horizontal',
+    mousewheel: {
+        invert: true,
     },
-  },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
 
-  navigation: {
-    prevEl: '.swiper-button-prev',
-    nextEl: '.swiper-button-next',
-    preventClicks: false,
-  },
+    slidesPerView: 1,
+    spaceBetween: 20,
 
-  // reachBeginning: document.querySelector('swiper-button-prev').disabled = true,
-  //reachEnd: document.querySelector('swiper-button-next').classList.add('.disabled'),
+    breakpoints: {
+        768: {},
+
+        1440: {
+            direction: 'horizontal',
+        },
+    },
+
+    navigation: {
+        prevEl: '.projects-slide .prev',
+        nextEl: '.projects-slide .next',
+        preventClicks: false,
+    },
+
+    // reachBeginning: document.querySelector('swiper-button-prev').disabled = true,
+    //reachEnd: document.querySelector('swiper-button-next').classList.add('.disabled'),
 });
 
 //const theSwiper = document.querySelector('.swiper').swiper;
@@ -52,7 +48,7 @@ const swiper = new Swiper('.projects-slide', {
 
 /* refs.rightButton.addEventListener('click', () => {
     theSwiper.slideNext()
-    
+
 })
 refs.leftButton.addEventListener('click', () => {
     theSwiper.slidePrev()
