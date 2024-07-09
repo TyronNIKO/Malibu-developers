@@ -28,7 +28,7 @@
 }
 @media (min-width: 1440px){
 .faq .faq-list{display:flex;flex-wrap:wrap}
-.faq .faq-list .ac.faq-item{width:calc(100 / 2);margin:0}
+.faq .faq-list .ac.faq-item{width:calc(100% / 2);margin:0}
 .faq .faq-list .faq-item .ac-comment .faq-paragraph{max-width:656px;padding:26px 0 26px;text-align:left}
 .faq .faq-list .accordion-container{grid-template-columns:50 50}
 .faq .faq-list .accordion-container .ac .faq-item{margin-bottom:0;padding-bottom:32px;border:none;border-top:1px solid rgba(250, 250, 250, 0.1)}
