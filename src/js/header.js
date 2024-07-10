@@ -16,44 +16,42 @@ function headerInit() {
     // console.log(closeBtn);
     // console.log(dropdownLink);
 
-    function onBurgerMenuClick() {
-        //   console.log(mobMenu.classList);
-        mobMenu.classList.add('is-open');
-        bodyEl.classList.add('mob-menu-overflow');
-    }
-    function onСloseBtnClick() {
-        mobMenu.classList.remove('is-open');
-        bodyEl.classList.remove('mob-menu-overflow');
-    }
-    function onMenuElClick() {
-        //   console.log(menuEl.classList);
-        dropdownMenu.classList.toggle('d-none');
-    }
-    function onMobileMenuClick(e) {
-        if (e.target === e.currentTarget) {
-            return;
-        }
-        mobMenu.classList.remove('is-open');
-        bodyEl.classList.remove('mob-menu-overflow');
-        // window.location.href = e.target.dataset.source;
-    }
-    function ondropdownLinkClick(e) {
+    function toggleDropdownMenu(e) {
+        console.log(e.target);
         if (e.target !== e.currentTarget) {
             dropdownMenu.classList.toggle('d-none');
         }
     }
+    function openModalMenu(e) {
+        console.log(e.target);
+        mobMenu.classList.add('is-open');
+        bodyEl.classList.add('mob-menu-overflow');
+    }
 
-    menuEl.addEventListener('click', onMenuElClick);
-    burgerMenu.addEventListener('click', onBurgerMenuClick);
-    dropdownMenu.addEventListener('click', ondropdownLinkClick);
-    hiddenMenu.addEventListener('click', onMobileMenuClick);
-    closeBtn.addEventListener('click', onСloseBtnClick);
-    orderBtn.addEventListener('click', onСloseBtnClick);
+    function closeModalMenu(e) {
+        mobMenu.classList.remove('is-open');
+        bodyEl.classList.remove('mob-menu-overflow');
+    }
+    const header = {
+        hideMenu() {
+            dropdownMenu.classList.add('d-none');
+        },
+        showMenu() {
+            dropdownMenu.classList.remove('d-none');
+        },
+    };
+
+    menuEl.addEventListener('click', toggleDropdownMenu);
+    burgerMenu.addEventListener('click', openModalMenu);
+    dropdownMenu.addEventListener('click', toggleDropdownMenu);
+    hiddenMenu.addEventListener('click', openModalMenu);
+    closeBtn.addEventListener('click', closeModalMenu);
+    orderBtn.addEventListener('click', closeModalMenu);
     document.addEventListener('keydown', e => {
         if (e.key == 'Escape') {
             e.preventDefault();
-            onСloseBtnClick();
-            onMenuElClick();
+            closeModalMenu();
+            header.hideMenu();
         }
     });
 }
