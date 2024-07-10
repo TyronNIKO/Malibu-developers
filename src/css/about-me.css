@@ -25,7 +25,7 @@
 .about-me .about-swiper .next .arrow{--color:#3b3b3b;opacity:1}
 .about-me .about-swiper .next.swiper-button-lock {cursor: not-allowed;}
 .about-me .about-swiper .swiper-slide{width:fit-content;height:100%}
-.about-me .about-swiper .swiper-slide .btn{display:flex;justify-content:center;align-items:center;width:130px;max-width:100%;padding:0}
+.about-me .about-swiper .swiper-slide .btn{display:flex;justify-content:center;align-items:center;width:32.4vw;max-width:130px;padding:0}
 .about-me .about-swiper .swiper-slide.swiper-slide-active .btn{background:rgba(var(--color-red), 1)}
 /* media */
 @media only screen and (min-width: 768px){
@@ -38,7 +38,7 @@
 .about-me .ac-text{width:auto}
 /* swiper */
 .about-me .about-swiper{--offset:104px}
-.about-me .about-swiper .swiper-slide .btn{width:200px}
+.about-me .about-swiper .swiper-slide .btn{width:200px;max-width:100%}
 }
 @media only screen and (min-width: 1440px){
 .about-me{padding-top:96px}
