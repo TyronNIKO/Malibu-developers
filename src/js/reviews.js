@@ -35,10 +35,10 @@ function reviewsInit() {
         },
     });
 
-    document.addEventListener('keydown', function (event) {
-        if (event.key === 'Tab') {
-            event.preventDefault();
-            if (event.shiftKey) {
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Tab') {
+            e.preventDefault();
+            if (e.shiftKey) {
                 swiper.slidePrev();
             } else {
                 swiper.slideNext();
