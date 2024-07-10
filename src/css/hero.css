@@ -1,4 +1,5 @@
-.hero-container{position:relative;z-index:1;display:flex;flex-direction:column;height:100dvh;padding:16px}
+.section-hero {position: relative;height:100dvh;}
+.hero-container{position:relative;z-index:1;display:flex;flex-direction:column;height:100%;padding:16px 0;}
 .hero-page-title{margin:auto;color:rgba(var(--color-white),1);font-weight:500;font-size:50px;line-height:1;letter-spacing:-0.08em;text-transform:uppercase}
 .hero-contact{display:flex;gap:4px;justify-content:space-between;align-items:center}
 .hero-social-list{display:flex;gap:4px;justify-content:space-between;align-items:center}
