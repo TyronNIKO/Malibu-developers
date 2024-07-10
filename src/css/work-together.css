@@ -10,7 +10,7 @@
 .work-together .error-message{position:absolute;bottom:-20px;left:0;display:none;margin-top:4px;color:#e74a3b;font-weight:500;font-size:14px;line-height:129%;letter-spacing:-0.02em/* Зміщення повідомлення вниз */}
 .work-together .success-message{position:absolute;bottom:-20px;left:0;display:none;margin-top:4px;color:green;font-weight:500;font-size:14px;line-height:129%;letter-spacing:-0.02em/* Зміщення повідомлення вниз */}
 .work-together .work-button{ flex-shrink: 0;width:100px;height:100px; margin-top: 16px;}
-.work-together .work-links-info {display:flex;flex-direction:row;gap:4px}
+.work-together .work-links-info {display:flex;flex-direction:column;gap:4px;}
 .work-together .work-links-info .btn{padding: 10px 12px; font-size: 14px; line-height: 1;}
 .work-together .modal{position:absolute;top:0;left:0;z-index:9999;display:none;box-sizing:border-box;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.5)}
 .work-together .modal-content{position:absolute;top:50%;left:50%;box-sizing:border-box;width:343px;height:276px;padding-top:64px;padding-right:32px;padding-bottom:64px;padding-left:32px;border:1px solid rgba(250, 250, 250, 0.1);border-radius:20px;border-radius:8px;background-color:#1c1d20;box-shadow:0 5px 15px rgba(0, 0, 0, 0.3);transform:translate(-50%, -50%)}
@@ -19,6 +19,10 @@
 .work-together .modal-message-2{margin-top:16px;font-weight:500;font-size:16px;line-height:150%;letter-spacing:-0.02em;text-align:center}
 .work-together .close-btn{position:absolute;top:20px;right:20px;display:flex;justify-content:center;align-items:center;box-sizing:border-box;width:22px;height:22px;padding:5.5px;border:none;background:none;cursor:pointer}
 .work-together .close-btn svg{width:11px;height:11px;stroke:var(--main-text);stroke-width:2px}
+
+@media only screen and (min-width: 375px){
+    .work-together .work-links-info {flex-direction:row;}
+}
 @media only screen and (min-width: 768px){
 .work-together{padding:88px 0 169px;background-image:url(/img/work-together/elements.png);background-position:calc(100% + 32px) top;background-size:contain;background-repeat:no-repeat}
 .work-together .work-title img{width:70px;height:70px}
