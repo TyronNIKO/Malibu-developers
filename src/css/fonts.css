@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-weight: 100 900;
     font-style: normal;
     font-family: 'Inter Tight';
@@ -9,5 +9,5 @@
     font-style: italic;
     font-family: 'Inter Tight';
     src: url('../fonts/Inter_Tight/InterTight-Italic-VariableFont_wght.ttf') format('ttf');
-  }
-  /* @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap'); */
+  } */
+  @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
