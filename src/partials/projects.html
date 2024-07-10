@@ -21,12 +21,20 @@
                     </div>
                     <div class="project-img-bg">
                         <picture>
-                            <source srcset="./img/projects/image2-comp.jpg,
-                            ./img/projects/image2-comp-2@.jpg 2x" media="(min-width:1440px)" />
-                            <source srcset="./img/projects/image2-tablet.jpg,
-                            ./img/projects/image2-tablet-2@.jpg 2x" media="(min-width:768px)" />
-                            <source srcset="./img/projects/image2.jpg,
-                            ./img/projects/image2-2@.jpg 2x" media="(max-width:767px)" />
+                            <source media="(min-width:1440px)"
+                            srcset="
+                            ./img/projects/image2-comp.jpg,
+                            ./img/projects/image2-comp-2@.jpg 2x"
+                            />
+                            <source media="(min-width:768px)"
+                            srcset="
+                            ./img/projects/image2-tablet.jpg,
+                            ./img/projects/image2-tablet-2@.jpg 2x"/>
+
+                            <source media="(min-width:320px)"
+                            srcset="
+                            ./img/projects/image2.jpg,
+                            ./img/projects/image2-2@.jpg 2x"/>
                             <img src="./img/projects/image2.jpg" alt="realProject-image" class="project-img">
                         </picture>
                     </div>

@@ -7,10 +7,11 @@
 .hero-contact-mail{display:flex;justify-content:center;align-items:center;padding:10px 12px}
 .hero-contact a{font-size:14px;line-height:1;letter-spacing:-0.02em}
 @media only screen and (min-width: 768px){
+    .section-hero { min-height: 1024px;}
 .hero-contact a{font-size:16px;}
 .hero-contact-mail{padding:18px 24px}
 .hero-social-list-link{width:55px;height:55px}
-.hero-container{padding-right:32px;padding-left:32px}
+.hero-container{padding-right:32px;padding-left:32px;}
 .hero-page-title{width:632px;font-size:90px}
 .hero-contact{gap:8px;justify-content:flex-end}
 }

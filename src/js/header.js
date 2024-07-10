@@ -26,13 +26,13 @@ function header() {
     menuEl.addEventListener('click', onMenuElClick);
     function onMenuElClick() {
         //   console.log(menuEl.classList);
-        dropdownMenu.classList.toggle('visually-hidden');
+        dropdownMenu.classList.toggle('d-none');
     }
     dropdownMenu.addEventListener('click', ondropdownLinkClick);
 
     function ondropdownLinkClick(e) {
         if (e.target !== e.currentTarget) {
-            dropdownMenu.classList.toggle('visually-hidden');
+            dropdownMenu.classList.toggle('d-none');
         }
     }
 

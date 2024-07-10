@@ -78,8 +78,8 @@ function reviewsInit() {
                                                             <li class="swiper-slide " data="${_id}">
                                                                 <div class="reviews-item">
                                                                     <img class="reviews-img" src="${avatar_url}" alt="${author}"/>
-                                                                    <p class="reviews-text">${review}</p>
                                                                     <h2 class="reviews-subtitle">${author}</h2>
+                                                                    <p class="reviews-text">${review}</p>
                                                                 </div>
                                                             </li>
                                                             `
