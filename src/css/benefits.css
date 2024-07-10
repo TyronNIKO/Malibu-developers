@@ -1,58 +1,27 @@
 /* mobile */
-.benefits {
-    padding: 64px 15px;
+.benefits{margin-top:64px;margin-bottom:64px}
+.benefits-title{padding-right:60px;padding-bottom:32px;color:rgba(250, 250, 250, 0.4);font-weight:600;font-size:16px;font-family:"Inter Tight",sans-serif;line-height:1.5;letter-spacing:-0.02em;text-transform:uppercase}
+.benefits-list{display:flex;flex-direction:column;gap:16px}
+.benefits-item{width:100%;height:270px;padding:24px;border-radius:20px;background:#242527}
+.benefits-box-icon{display:flex;justify-content:center;align-items:center;width:48px;height:48px;border-radius:10px;background:#ed3b44}
+.benefits-icon{fill:#fafafa}
+.benefits-item-title{margin-top:64px;margin-bottom:8px;color:#fafafa;font-weight:600;font-size:20px}
+.benefits-item-text{color:rgba(250, 250, 250, 0.6);font-size:16px}
+.benefits-btn{margin-top:32px;padding:18px 36px;border:1px solid rgba(250, 250, 250, 0.2);border-radius:60px;background-color:#1c1d20}
+.benefits-btn:hover{border:1px solid #fafafa}
+.benefits-btn-text{color:#fafafa;font-weight:500;font-size:16px;font-family:"Inter Tight",sans-serif;letter-spacing:-0.02em}
+/* table */
+@media only screen and (min-width: 768px){
+.benefits{margin-top:96px;margin-bottom:96px}
+.benefits-list{flex-direction:row;flex-wrap:wrap}
+.benefits-item{width:calc((100% - 16px) / 2)}
 }
-.benefits-title {
-font-weight: 600;
-text-transform: uppercase;
-color: rgba(250, 250, 250, 0.4);
-padding-right: 60px;
-padding-bottom: 32px;
+/* desktop */
+@media only screen and (min-width: 1440px){
+.benefits{margin-top:164px;margin-bottom:164px}
+.benefits-box-desktop{display:flex;flex-direction:row}
+.benefits-box{margin-left:412px}
+.benefits-box-title{display:block}
+.benefits-title{width:284px;padding:0}
+.benefits-btn{margin-top:64px}
 }
-.benefits-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.benefits-item {
-    border-radius: 20px;
-padding: 24px;
-height: 270px;
-background: #242527;
-
-}
-.benefits-box-icon {
-    border-radius: 10px;
-width: 48px;
-height: 48px;
-background: #ed3b44;
-display: flex;
-justify-content: center;
-    align-items: center;
-}
-.benefits-item-title {
-    margin-top: 64px;
-margin-bottom: 8px;
-font-weight: 600;
-font-size: 20px;
-color: #fafafa;
-}
-.benefits-item-text {
-font-size: 16px;
-color: rgba(250, 250, 250, 0.6);
-}
-.benefits-btn {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-border-radius: 60px;
-padding: 18px 36px;
-margin-top: 32px;
-  background-color: #1c1d20;
-}
-.benefits-btn-text {
-font-family: "Inter Tight", sans-serif;
-font-weight: 500;
-font-size: 16px;
-letter-spacing: -0.02em;
-color: #fafafa;
-}
-

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/Malibu-developers/",
+    "build2": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -19,6 +20,7 @@
     "axios": "^1.7.2",
     "axios-mock-adapter": "^1.22.0",
     "izitoast": "^1.4.0",
+    "jQuery": "^1.7.4",
     "modern-normalize": "^2.0.0",
     "swiper": "^11.1.4",
     "vite-plugin-full-reload": "^1.0.5",
