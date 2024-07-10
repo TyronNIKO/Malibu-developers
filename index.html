@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/Malibu-developers/assets/vendor-fea644b1.js"></script>
-    <script type="module" crossorigin src="/Malibu-developers/assets/main-5e11be1a.js"></script>
-    <link rel="stylesheet" href="/Malibu-developers/assets/main-4ebc9480.css">
+    <script type="module" crossorigin src="/Malibu-developers/assets/main-3564bac1.js"></script>
+    <link rel="stylesheet" href="/Malibu-developers/assets/main-6b59c6af.css">
     <link rel="stylesheet" href="/Malibu-developers/assets/vendor-5b0b01af.css">
   </head>
 
@@ -83,7 +83,7 @@
       <section class="about-me" id="about-me">
     <div class="container">
         <h2 class="visually-hidden">About me</h2>
-        <div class="about-container speech">
+        <div class="speech">
             <p class="text"> I work with people all over the world to create impressive and <span class="functional">functional</span>
                 <span class="websites">websites</span> that reflect each client's unique personality.
             </p>
@@ -91,13 +91,13 @@
                 <picture>
                     <source
                         media="(max-width: 768px)"
-                        srcset="/Malibu-developers/assets/phone-93b950ed.jpg 1x, /Malibu-developers/assets/phone@2x-08179807.jpg 2x" />
+                        srcset="/Malibu-developers/assets/phone-93b950ed.jpg , /Malibu-developers/assets/phone@2x-08179807.jpg 2x" />
                     <source
                         media="(max-width: 1440px)"
-                        srcset="/Malibu-developers/assets/tablet-f99d49a5.jpg 1x, /Malibu-developers/assets/tablet@2x-eb31994b.jpg 2x" />
+                        srcset="/Malibu-developers/assets/tablet-f99d49a5.jpg , /Malibu-developers/assets/tablet@2x-eb31994b.jpg 2x" />
                     <source
                         media="(min-width: 1440px)"
-                        srcset="/Malibu-developers/assets/desctop-2246df21.jpg 1x, /Malibu-developers/assets/desctop@2x-f9166480.jpg 2x" />
+                        srcset="/Malibu-developers/assets/desctop-2246df21.jpg , /Malibu-developers/assets/desctop@2x-f9166480.jpg 2x"/>
                     <img
                         src="/Malibu-developers/assets/phone-93b950ed.jpg"
                         alt="about-me-image-phone"
@@ -105,7 +105,7 @@
                 </picture>
             </div>
         </div>
-        <div class="about-container accordion">
+        <div class="accordion">
             <ul class="list accordion-container">
                 <li class="item ac is-active">
                     <h3 class="title ac-header">
@@ -148,29 +148,31 @@
                 </li>
             </ul>
         </div>
-        <!-- <div class="about-container skills about-swiper swiper">
-      <ul class="skills-list swiper-wrapper">
-        <li class="swiper-slide">
-          <div class="btn btn-round">HTML/CSS</div>
-        </li>
-        <li class="swiper-slide">
-          <div class="btn btn-round">JavaScript</div>
-        </li>
-        <li class="swiper-slide">
-          <div class="btn btn-round">React</div>
-        </li>
-        <li class="swiper-slide">
-          <div class="btn btn-round">Node.js</div>
-        </li>
-        <li class="swiper-slide">
-          <div class="btn btn-round">React Native</div>
-        </li>
-        <li class="swiper-slide">
-          <div class="btn btn-round">Soft skills</div>
-        </li>
-      </ul>
-      <div class="swiper-button-next">arrow icon</div>
-    </div> -->
+        <div class="swiper about-swiper">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="btn btn-round">HTML/CSS</div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="btn btn-round">JavaScript</div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="btn btn-round">React</div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="btn btn-round">Node.js</div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="btn btn-round">React Native</div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="btn btn-round">Soft skills</div>
+                </li>
+            </ul>
+            <button type="button" class="swiper-button-next next">
+                <span class="arrow arrow-right"></span>
+            </button>
+        </div>
     </div>
 </section>
       <!-- benefits.html -->
@@ -218,9 +220,7 @@
                     <p class="benefits-item-text"> I understand how important time is to you. Ready to work quickly and efficiently, without reducing the quality of work. </p>
                 </li>
             </ul>
-            <button class="benefits-btn" type="button">
-                <a class="benefits-btn-text" href="#order"> Order the project</a>
-            </button>
+            <a class="benefits-btn btn" href="#order"> Order the project</a>
         </div>
     </div>
 </section>
@@ -242,19 +242,16 @@
                         </div>
                         <div class="text-style">
                             <h3 class="project-style-h3">Programming Across <br> Borders: Ideas, <br> Technologies, Innovations</h3>
-                            <button type="button" class="project-btn-style btn btn-red">
-                                <a href="https://github.com/TyronNIKO/Malibu-developers" target="_blank">See project</a></button>
+                            <a href="https://github.com/TyronNIKO/Malibu-developers" class="project-btn-style btn btn-red" target="_blank">See project</a>
                         </div>
                     </div>
                     <div class="project-img-bg">
                         <picture>
-                            <source srcset="/Malibu-developers/assets/image2-comp-e3ecc567.jpg 1x, /Malibu-developers/assets/image2-comp-2@-2c830987.jpg 2x" media="(min-width:1440px)" />
-                            <source srcset="/Malibu-developers/assets/image2-comp-e3ecc567.jpg 1x, /Malibu-developers/assets/image2-comp-2@-2c830987.jpg 2x" media="(min-width:768px)" />
-                            <source srcset="
-                                ./img/projects/image 2.jpg 1x,
-                                ./img/projects/image 2-2@.jpg 2x
-                            " media="(max-width:767px)" />
-                            <img src="/Malibu-developers/assets/image 2-6e414c37.jpg" alt="realProject-image" class="project-img">
+                            <source srcset="/Malibu-developers/assets/image2-comp-e3ecc567.jpg , /Malibu-developers/assets/image2-comp-2@-2c830987.jpg 2x" media="(min-width:1440px)" />
+                            <source srcset="/Malibu-developers/assets/image2-comp-e3ecc567.jpg , /Malibu-developers/assets/image2-comp-2@-2c830987.jpg 2x" media="(min-width:768px)" />
+                            <source srcset="./img/projects/image2.jpg,
+                            ./img/projects/image2-2@.jpg 2x" media="(max-width:767px)" />
+                            <img src="/Malibu-developers/assets/image2-6e414c37.jpg" alt="realProject-image" class="project-img">
                         </picture>
                     </div>
                 </div>
@@ -270,19 +267,15 @@
                         </div>
                         <div class="text-style">
                             <h3 class="project-style-h3">Programming Across <br> Borders: Ideas, <br> Technologies, Innovations</h3>
-                            <button type="button" class="project-btn-style btn btn-red">
-                                <a href="https://github.com/TyronNIKO/Malibu-developers" target="_blank">See project</a></button>
+                            <button type="button" class="project-btn-style btn btn-red"><a href="https://github.com/TyronNIKO/Malibu-developers" target="_blank">See project</a></button>
                         </div>
                     </div>
                     <div class="project-img-bg">
                         <picture>
-                            <source srcset="/Malibu-developers/assets/image3-comp-17a4c62c.jpg 1x, /Malibu-developers/assets/image3-comp-2@-9be5f0b1.jpg 2x" media="(min-width:1440px)" />
-                            <source srcset="/Malibu-developers/assets/image3-comp-17a4c62c.jpg 1x, /Malibu-developers/assets/image3-comp-2@-9be5f0b1.jpg 2x" media="(min-width:768px)" />
-                            <source srcset="
-                                                ./img/projects/image 3.jpg 1x,
-                                                ./img/projects/image 3-2@.jpg 2x
-                                            " media="(max-width:767px)" />
-                            <img src="/Malibu-developers/assets/image 3-7f3a7d43.jpg" alt="realProject-image" class="project-img">
+                            <source srcset="/Malibu-developers/assets/image3-comp-17a4c62c.jpg , /Malibu-developers/assets/image3-comp-2@-9be5f0b1.jpg 2x" media="(min-width:1440px)" />
+                            <source srcset="/Malibu-developers/assets/image3-comp-17a4c62c.jpg , /Malibu-developers/assets/image3-comp-2@-9be5f0b1.jpg 2x" media="(min-width:768px)" />
+                            <source srcset="/Malibu-developers/assets/image3-7f3a7d43.jpg , /Malibu-developers/assets/image3-2@-980cc8fd.jpg 2x" media="(max-width:767px)" />
+                            <img src="/Malibu-developers/assets/image3-7f3a7d43.jpg" alt="realProject-image" class="project-img">
                         </picture>
                     </div>
                 </div>
@@ -298,29 +291,25 @@
                         </div>
                         <div class="text-style">
                             <h3 class="project-style-h3">Programming Across <br> Borders: Ideas, <br> Technologies, Innovations</h3>
-                            <button type="button" class="project-btn-style btn btn-red">
-                                <a href="https://github.com/TyronNIKO/Malibu-developers" target="_blank">See project</a></button>
+                            <a href="https://github.com/TyronNIKO/Malibu-developers" class="project-btn-style btn btn-red" target="_blank">See project</a>
                         </div>
                     </div>
                     <div class="project-img-bg">
                         <picture>
-                            <source srcset="/Malibu-developers/assets/image4-comp-aa80e1e4.jpg 1x, /Malibu-developers/assets/image4-comp-2@-9e1d86fd.jpg 2x" media="(min-width:1440px)" />
-                            <source srcset="/Malibu-developers/assets/image4-comp-aa80e1e4.jpg 1x, /Malibu-developers/assets/image4-comp-2@-9e1d86fd.jpg 2x" media="(min-width:768px)" />
-                            <source srcset="
-                                                ./img/projects/image 4.jpg 1x,
-                                                ./img/projects/image 4-2@.jpg 2x
-                                            " media="(max-width:767px)" />
-                            <img src="/Malibu-developers/assets/image 4-0f62c071.jpg" alt="realProject-image" class="project-img">
+                            <source srcset="/Malibu-developers/assets/image4-comp-aa80e1e4.jpg , /Malibu-developers/assets/image4-comp-2@-9e1d86fd.jpg 2x" media="(min-width:1440px)" />
+                            <source srcset="/Malibu-developers/assets/image4-comp-aa80e1e4.jpg , /Malibu-developers/assets/image4-comp-2@-9e1d86fd.jpg 2x" media="(min-width:768px)" />
+                            <source srcset="/Malibu-developers/assets/image4-0f62c071.jpg , /Malibu-developers/assets/image4-2@-a406434b.jpg 2x" media="(max-width:767px)" />
+                            <img src="/Malibu-developers/assets/image4-0f62c071.jpg" alt="realProject-image" class="project-img">
                         </picture>
                     </div>
                 </div>
             </div>
             <div class="btns-style">
                 <button type="button" class="swiper-button-prev prev btn-round div-icon-item">
-                    <div class="arrow arrow-left"></div>
+                    <span class="arrow arrow-left"></span>
                 </button>
                 <button type="button" class="swiper-button-next next btn-round div-icon-item">
-                    <div class="arrow arrow-right"></div>
+                    <span class="arrow arrow-right"></span>
                 </button>
             </div>
         </div>
@@ -335,225 +324,197 @@
                 <li class="faq-item ac">
                     <h3 class="faq-title ac-header">
                         <button type="button" class="faq-btn ac-trigger">
-                            <p class="faq-title-paragraph">What programming languages are most often used in your project?</p>
+                            <span class="faq-title-paragraph">What programming languages are most often used in your project?</span>
                             <svg class="faq-svg" width="20" height="20">
                                 <use href="/Malibu-developers/assets/icons-sprite-71dabad1.svg#icon-arrow-botton" />
                             </svg>
                         </button>
                     </h3>
-
                     <div class="ac-comment ac-panel">
-                        <p class="faq-paragraph ac-text ">
-                            In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.
-                        </p>
+                        <p class="faq-paragraph ac-text "> In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages. </p>
                     </div>
                 </li>
                 <li class="faq-item ac">
                     <h3 class="faq-title ac-header">
                         <button type="button" class="faq-btn ac-trigger">
-                            <p class="faq-title-paragraph">How can I contact you</p><svg class="faq-svg" width="20" height="20">
-                                <use href="/Malibu-developers/assets/icons-sprite-71dabad1.svg#icon-arrow-botton" />
-                            </svg>
-                        </button>
-                    </h3>
-
-                    <div class="ac-comment ac-panel">
-                        <p class="faq-paragraph ac-text">
-                            In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.
-                        </p>
-                    </div>
-                </li>
-                <li class="faq-item ac">
-                    <h3 class="faq-title ac-header">
-                        <button type="button" class="faq-btn ac-trigger">
-                          <p class="faq-title-paragraph">What are the deadlines for the project?</p><svg class="faq-svg" width="20" height="20">
-                                <use href="/Malibu-developers/assets/icons-sprite-71dabad1.svg#icon-arrow-botton"/>
-                            </svg>
-                        </button>
-                    </h3>
-
-                    <div class="ac-comment ac-panel">
-                        <p class="faq-paragraph ac-text">
-                            The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.
-                        </p>
-                    </div>
-                </li>
-                <li class="faq-item ac">
-                    <h3 class="faq-title ac-header">
-                        <button type="button" class="faq-btn ac-trigger">
-                            <p class="faq-title-paragraph">Do you provide advice or support?</p><svg class="faq-svg" width="20" height="20">
-                                <use href="/Malibu-developers/assets/icons-sprite-71dabad1.svg#icon-arrow-botton" />
-                            </svg>
-                        </button>
-                    </h3>
-                    <div class="ac-comment ac-panel">
-                        <p class="faq-paragraph ac-text">
-                            The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.
-                        </p>
-                    </div>
-                </li>
-                <li class="faq-item ac">
-                    <h3 class="faq-title ac-header">
-                        <button type="button" class="faq-btn ac-trigger">
-                         <p class="faq-title-paragraph">What payment methods do you accept?</p><svg class="faq-svg" width="20" height="20">
-                                <use href="/Malibu-developers/assets/icons-sprite-71dabad1.svg#icon-arrow-botton" />
-                            </svg>
-                        </button>
-                    </h3>
-
-                    <div class="ac-comment ac-panel">
-                        <p class="faq-paragraph ac-text">
-                            Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.
-                        </p>
-                    </div>
-                </li>
-                <li class="faq-item ac">
-                    <h3 class="faq-title ac-header">
-                        <button type="button" class="faq-btn ac-trigger">
-                        <p class="faq-title-paragraph">What does the process of developing a software product look like from idea to implementation?</p>
+                            <span class="faq-title-paragraph">How can I contact you</span>
                             <svg class="faq-svg" width="20" height="20">
-                            <use href="/Malibu-developers/assets/icons-sprite-71dabad1.svg#icon-arrow-botton" />
+                                <use href="/Malibu-developers/assets/icons-sprite-71dabad1.svg#icon-arrow-botton" />
                             </svg>
                         </button>
                     </h3>
-
                     <div class="ac-comment ac-panel">
-                        <p class="faq-paragraph ac-text">
-                            Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.
-                        </p>
+                        <p class="faq-paragraph ac-text"> In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages. </p>
+                    </div>
+                </li>
+                <li class="faq-item ac">
+                    <h3 class="faq-title ac-header">
+                        <button type="button" class="faq-btn ac-trigger">
+                            <span class="faq-title-paragraph">What are the deadlines for the project?</span>
+                            <svg class="faq-svg" width="20" height="20">
+                                <use href="/Malibu-developers/assets/icons-sprite-71dabad1.svg#icon-arrow-botton" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div class="ac-comment ac-panel">
+                        <p class="faq-paragraph ac-text"> The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project. </p>
+                    </div>
+                </li>
+                <li class="faq-item ac">
+                    <h3 class="faq-title ac-header">
+                        <button type="button" class="faq-btn ac-trigger">
+                            <span class="faq-title-paragraph">Do you provide advice or support?</span>
+                            <svg class="faq-svg" width="20" height="20">
+                                <use href="/Malibu-developers/assets/icons-sprite-71dabad1.svg#icon-arrow-botton" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div class="ac-comment ac-panel">
+                        <p class="faq-paragraph ac-text"> The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project. </p>
+                    </div>
+                </li>
+                <li class="faq-item ac">
+                    <h3 class="faq-title ac-header">
+                        <button type="button" class="faq-btn ac-trigger">
+                            <span class="faq-title-paragraph">What payment methods do you accept?</span>
+                            <svg class="faq-svg" width="20" height="20">
+                                <use href="/Malibu-developers/assets/icons-sprite-71dabad1.svg#icon-arrow-botton" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div class="ac-comment ac-panel">
+                        <p class="faq-paragraph ac-text"> Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others. </p>
+                    </div>
+                </li>
+                <li class="faq-item ac">
+                    <h3 class="faq-title ac-header">
+                        <button type="button" class="faq-btn ac-trigger">
+                            <span class="faq-title-paragraph">What does the process of developing a software product look like from idea to implementation?</span>
+                            <svg class="faq-svg" width="20" height="20">
+                                <use href="/Malibu-developers/assets/icons-sprite-71dabad1.svg#icon-arrow-botton" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div class="ac-comment ac-panel">
+                        <p class="faq-paragraph ac-text"> Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others. </p>
                     </div>
                 </li>
             </ul>
         </div>
     </div>
 </section>
-
       <!-- covers.html -->
 <section id="covers">
-  <div class="marquee container">
-    <h2 class="visually-hidden">Covers</h2>
-    <ul class="marquee-inner">
-      <li class="marquee-card">
-        <img
-          class="marquee-picture"
-          srcset="/Malibu-developers/assets/rectangle_12@2x-7a5ff6b7.jpg 2x"
-          src="/Malibu-developers/assets/rectangle_12-b07be227.jpg"
-          alt="English learning"
-          loading="lazy"
-        />
-      </li>
-
-      <li class="marquee-card">
-        <img
-          class="marquee-picture"
-          srcset="/Malibu-developers/assets/rectangle_6@2x-60ecc45c.jpg 2x"
-          src="/Malibu-developers/assets/rectangle_6-bf9a7af4.jpg"
-          alt="Cosmetics brand"
-          loading="lazy"
-        />
-      </li>
-    </ul>
-    <ul class="marquee-inner">
-      <li class="marquee-card">
-        <img
-          class="marquee-picture"
-          srcset="/Malibu-developers/assets/rectangle_10@2x-92cc9a2f.jpg 2x"
-          src="/Malibu-developers/assets/rectangle_10-0a98b272.jpg"
-          alt="Fitness"
-          loading="lazy"
-        />
-      </li>
-      <li class="marquee-card">
-        <img
-          class="marquee-picture"
-          srcset="/Malibu-developers/assets/rectangle_7@2x-ceb84f64.jpg 2x"
-          src="/Malibu-developers/assets/rectangle_7-250b97be.jpg"
-          alt="Mimino"
-          loading="lazy"
-        />
-      </li>
-    </ul>
-    <ul class="marquee-inner">
-      <li class="marquee-card">
-        <img
-          class="marquee-picture"
-          srcset="/Malibu-developers/assets/rectangle_11@2x-6767913d.jpg 2x"
-          src="/Malibu-developers/assets/rectangle_11-d2366a54.jpg"
-          alt="Finances Masterfully"
-          loading="lazy"
-        />
-      </li>
-      <li class="marquee-card">
-        <img
-          class="marquee-picture"
-          srcset="/Malibu-developers/assets/first_screen_1@2x-ddb0dac4.jpg 2x"
-          src="/Malibu-developers/assets/first_screen_1-fcef5a32.jpg"
-          alt="Business leader"
-          loading="lazy"
-        />
-      </li>
-      <li class="marquee-card">
-        <img
-          class="marquee-picture"
-          srcset="/Malibu-developers/assets/rectangle_8@2x-94fc4bdc.jpg 2x"
-          src="/Malibu-developers/assets/rectangle_8-e941118e.jpg"
-          alt="Ukrainian artistry"
-          loading="lazy"
-        />
-      </li>
-    </ul>
-    <ul class="marquee-inner">
-      <li class="marquee-card">
-        <img
-          class="marquee-picture"
-          srcset="/Malibu-developers/assets/rectangle_9@2x-a0f60507.jpg 2x"
-          src="/Malibu-developers/assets/rectangle_9-768e3491.jpg"
-          alt="Organic vegetables"
-          loading="lazy"
-        />
-      </li>
-      <li class="marquee-card">
-        <img
-          class="marquee-picture"
-          srcset="/Malibu-developers/assets/rectangle_4@2x-cb85ee5d.jpg 2x"
-          src="/Malibu-developers/assets/rectangle_4-1421c8e1.jpg"
-          alt="Get body in shape"
-          loading="lazy"
-        />
-      </li>
-      <li class="marquee-card">
-        <img
-          class="marquee-picture"
-          srcset="/Malibu-developers/assets/rectangle_5@2x-b8d32a52.jpg 2x"
-          src="/Malibu-developers/assets/rectangle_5-8b29273f.jpg"
-          alt="Fresh harvest box"
-          loading="lazy"
-        />
-      </li>
-    </ul>
-    <ul class="marquee-inner">
-      <li class="marquee-card">
-        <img
-          class="marquee-picture"
-          srcset="/Malibu-developers/assets/rectangle_12@2x-7a5ff6b7.jpg 2x"
-          src="/Malibu-developers/assets/rectangle_12-b07be227.jpg"
-          alt="Learning English"
-          loading="lazy"
-        />
-      </li>
-      <li class="marquee-card">
-        <img
-          class="marquee-picture"
-          srcset="/Malibu-developers/assets/rectangle_6@2x-60ecc45c.jpg 2x"
-          src="/Malibu-developers/assets/rectangle_6-bf9a7af4.jpg"
-          alt="Cosmetics brand"
-          loading="lazy"
-        />
-      </li>
-    </ul>
-  </div>
+    <div class="marquee container">
+        <h2 class="visually-hidden">Covers</h2>
+        <ul class="marquee-inner">
+            <li class="marquee-card">
+                <img
+                    class="marquee-picture"
+                    srcset="/Malibu-developers/assets/rectangle_12@2x-7a5ff6b7.jpg 2x"
+                    src="/Malibu-developers/assets/rectangle_12-b07be227.jpg"
+                    alt="English learning"
+                    loading="lazy" />
+            </li>
+            <li class="marquee-card">
+                <img
+                    class="marquee-picture"
+                    srcset="/Malibu-developers/assets/rectangle_6@2x-60ecc45c.jpg 2x"
+                    src="/Malibu-developers/assets/rectangle_6-bf9a7af4.jpg"
+                    alt="Cosmetics brand"
+                    loading="lazy" />
+            </li>
+        </ul>
+        <ul class="marquee-inner">
+            <li class="marquee-card">
+                <img
+                    class="marquee-picture"
+                    srcset="/Malibu-developers/assets/rectangle_10@2x-92cc9a2f.jpg 2x"
+                    src="/Malibu-developers/assets/rectangle_10-0a98b272.jpg"
+                    alt="Fitness"
+                    loading="lazy" />
+            </li>
+            <li class="marquee-card">
+                <img
+                    class="marquee-picture"
+                    srcset="/Malibu-developers/assets/rectangle_7@2x-ceb84f64.jpg 2x"
+                    src="/Malibu-developers/assets/rectangle_7-250b97be.jpg"
+                    alt="Mimino"
+                    loading="lazy" />
+            </li>
+        </ul>
+        <ul class="marquee-inner">
+            <li class="marquee-card">
+                <img
+                    class="marquee-picture"
+                    srcset="/Malibu-developers/assets/rectangle_11@2x-6767913d.jpg 2x"
+                    src="/Malibu-developers/assets/rectangle_11-d2366a54.jpg"
+                    alt="Finances Masterfully"
+                    loading="lazy" />
+            </li>
+            <li class="marquee-card">
+                <img
+                    class="marquee-picture"
+                    srcset="/Malibu-developers/assets/first_screen_1@2x-ddb0dac4.jpg 2x"
+                    src="/Malibu-developers/assets/first_screen_1-fcef5a32.jpg"
+                    alt="Business leader"
+                    loading="lazy" />
+            </li>
+            <li class="marquee-card">
+                <img
+                    class="marquee-picture"
+                    srcset="/Malibu-developers/assets/rectangle_8@2x-94fc4bdc.jpg 2x"
+                    src="/Malibu-developers/assets/rectangle_8-e941118e.jpg"
+                    alt="Ukrainian artistry"
+                    loading="lazy" />
+            </li>
+        </ul>
+        <ul class="marquee-inner">
+            <li class="marquee-card">
+                <img
+                    class="marquee-picture"
+                    srcset="/Malibu-developers/assets/rectangle_9@2x-a0f60507.jpg 2x"
+                    src="/Malibu-developers/assets/rectangle_9-768e3491.jpg"
+                    alt="Organic vegetables"
+                    loading="lazy" />
+            </li>
+            <li class="marquee-card">
+                <img
+                    class="marquee-picture"
+                    srcset="/Malibu-developers/assets/rectangle_4@2x-cb85ee5d.jpg 2x"
+                    src="/Malibu-developers/assets/rectangle_4-1421c8e1.jpg"
+                    alt="Get body in shape"
+                    loading="lazy" />
+            </li>
+            <li class="marquee-card">
+                <img
+                    class="marquee-picture"
+                    srcset="/Malibu-developers/assets/rectangle_5@2x-b8d32a52.jpg 2x"
+                    src="/Malibu-developers/assets/rectangle_5-8b29273f.jpg"
+                    alt="Fresh harvest box"
+                    loading="lazy" />
+            </li>
+        </ul>
+        <ul class="marquee-inner">
+            <li class="marquee-card">
+                <img
+                    class="marquee-picture"
+                    srcset="/Malibu-developers/assets/rectangle_12@2x-7a5ff6b7.jpg 2x"
+                    src="/Malibu-developers/assets/rectangle_12-b07be227.jpg"
+                    alt="Learning English"
+                    loading="lazy" />
+            </li>
+            <li class="marquee-card">
+                <img
+                    class="marquee-picture"
+                    srcset="/Malibu-developers/assets/rectangle_6@2x-60ecc45c.jpg 2x"
+                    src="/Malibu-developers/assets/rectangle_6-bf9a7af4.jpg"
+                    alt="Cosmetics brand"
+                    loading="lazy" />
+            </li>
+        </ul>
+    </div>
 </section>
-
       <section class="reviews-section" id="reviews">
     <div class="container">
         <h2 class="reviews-title">Reviews</h2>
@@ -561,10 +522,10 @@
             <ul class="reviews-list swiper-wrapper"></ul>
             <div class="btn-wrapper">
                 <button class="swiper-button-prev prev reviews-btn" type="button">
-                    <div class="arrow arrow-left"></div>
+                    <span class="arrow arrow-left"></span>
                 </button>
                 <button class="swiper-button-next next reviews-btn" type="button">
-                    <div class="arrow arrow-right"></div>
+                    <span class="arrow arrow-right"></span>
                 </button>
             </div>
         </div>
