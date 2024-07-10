@@ -6,6 +6,7 @@ button:disabled {
   cursor: not-allowed;
 }
 .btn {
+  width: fit-content;
   padding: 18px 24px;
   border: 1px rgba(var(--color-white), 0.2) solid;
   border-radius: 60px;

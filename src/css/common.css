@@ -45,7 +45,7 @@
 html{scroll-behavior:smooth}
 body{background-color:rgba(var(--color-black), 1);color:rgba(var(--color-white), 1);font-weight:500;font-size:16px;font-family:'Inter Tight',sans-serif;line-height:1.5;letter-spacing:-0.02em;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
 /* Mobile */
-.container{width:100%;min-width:320px;max-width:375px;margin:0 auto;padding:0 16px}
+.container{width:100%;min-width:320px;max-width:375px;height: 100%;margin:0 auto;padding:0 16px;}
 @media only screen and (min-width: 375px){
 /* .container{max-width:100%} */
 }

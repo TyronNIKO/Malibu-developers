@@ -1,14 +1,15 @@
 .projects .project-swiper-slide{overflow:hidden;border-radius:24px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box}
 .projects .projects-intro{margin-bottom:32px;color:rgba(250, 250, 250, 0.4);font-weight:600;font-size:16px;font-family:'Inter Tight',sans-serif;line-height:150%;letter-spacing:-0.02em;text-transform:uppercase}
-.projects .project-top-screen{padding:32px 32px 0 32px;background-color:#fafafa;}
+.projects .project-top-screen{padding:32px;background-color:#fafafa;}
 .projects .project-img-bg{height:auto;padding:100px 16px;background-color:#242527}
 .projects .project-img{min-width:311px}
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .projects .project-one-skill{display:flex;justify-content:center;align-items:center;padding:13px 18px;border:1px solid rgba(28, 29, 32, 0.2);border-radius:60px;color:#1c1d20;font-weight:500;font-size:16px;font-family:'Inter Tight',sans-serif;letter-spacing:-0.02em/* height: 45px; */}
 .projects .project-lang-skill{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:96px}
 .projects .project-style-h3{color:#1c1d20;font-weight:500;font-size:24px;font-family:'Inter Tight',sans-serif;line-height:117%;letter-spacing:-0.03em}
-.projects .project-btn-style{margin:32px 0;padding:13px 32px}
+.projects .project-btn-style{display: block;padding:13px 32px;}
 .pb-style{padding-bottom:64px}
+.projects .text-style {display: flex;flex-direction: column;gap: 32px;}
 /*buttons*/
 .projects .btns-style{display:flex;gap:12px;justify-content:center;padding:32px 0 0 0}
 .projects .team-icon{display:inline-block;width:32px;height:32px;background-size:32px 32px;background-repeat:no-repeat}
@@ -20,11 +21,11 @@
 }
 @media screen and (min-width: 768px){
 .projects .projects-intro{color:rgba(250, 250, 250, 0.4);font-weight:600;font-size:16px;font-family:'Inter Tight',sans-serif;line-height:150%;letter-spacing:-0.02em;text-transform:uppercase}
-.projects .project-top-screen{padding:64px 64px 0 64px}
+.projects .project-top-screen{padding:64px}
 .projects .project-img-bg{padding:120px 45px;background-color:#242527}
 .projects .btns-style{display:flex;gap:20px;justify-content:center;padding:64px 0 0 0}
 .projects .div-icon-item{width:68px;height:68px;padding:18px}
-.projects .project-btn-style{margin:32px 0 64px 0;padding:18px 50px;border-radius:60px}
+.projects .project-btn-style{padding:18px 50px;border-radius:60px}
 .projects .project-lang-skill{margin-bottom:164px}
 .projects .project-style-h3{font-weight:500;font-size:44px;line-height:100%}
 .projects .project-one-skill{padding:18px;border:1px solid rgba(28, 29, 32, 0.2);border-radius:60px}
@@ -34,6 +35,6 @@
 .projects .project-swiper-slide{display:flex}
 .projects .project-img{min-width:614px}
 .projects .project-lang-skill{margin-bottom:223px}
-.projects .project-top-screen{min-width:50%;padding:64px 64px 0 64px}
+.projects .project-top-screen{min-width:50%;}
 .projects .project-img-bg{min-width:50%;padding:120px 37px}
 }
