@@ -15,7 +15,7 @@
 .faq .ac .ac-trigger::after{display:none}
 .faq .ac-panel{padding-right:24px}
 .faq .faq-list .faq-item .ac-comment .faq-paragraph{padding:16px 0 20px;color:rgba(250, 250, 250, 0.6);font-weight:500;font-size:16px;font-family:'Inter Tight',sans-serif;line-height:1.5;letter-spacing:-0.02em;text-align:left}
-.faq .faq-container{margin-bottom:164px}
+.faq .faq-container{margin-bottom:64px}
 @media screen and (min-width: 768px){
 .faq {padding:47px 32px}
 .faq .faq-main-title{padding:0;font-size:20px}
@@ -24,7 +24,7 @@
 .faq .ac-trigger{gap:90px}
 .faq .ac.faq-item{padding:32px 0;background-color:#1C1D20}
 .faq .ac-panel{padding-right:32px}
-.faq .faq-container{margin-bottom:64px}
+.faq .faq-container{margin-bottom:96px}
 }
 @media (min-width: 1440px){
 .faq .faq-list{display:flex;flex-wrap:wrap}
@@ -34,5 +34,5 @@
 .faq .faq-list .accordion-container .ac .faq-item{margin-bottom:0;padding-bottom:32px;border:none;border-top:1px solid rgba(250, 250, 250, 0.1)}
 .faq .ac.faq-item:nth-child(odd){padding-right:32px;padding-left:0;border:1px solid rgba(250, 250, 250, 0.1);border-left:none}
 .faq .ac.faq-item:nth-child(even){padding-left:32px;border:1px solid rgba(250, 250, 250, 0.1);border-right:none}
-.faq .faq-container{margin-bottom:106px}
+.faq .faq-container{margin-bottom:164px}
 }

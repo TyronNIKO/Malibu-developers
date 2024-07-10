@@ -80,7 +80,6 @@ function reviewsInit() {
                                                                     <img class="reviews-img" src="${avatar_url}" alt="${author}"/>
                                                                     <h2 class="reviews-subtitle">${author}</h2>
                                                                     <p class="reviews-text">${review}</p>
-                                                                    
                                                                 </div>
                                                             </li>
                                                             `

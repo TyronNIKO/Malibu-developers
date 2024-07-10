@@ -102,9 +102,10 @@
     .marquee-picture {
         width: 544px;
     }
-}
 
+}
 /* Desktop */
+
 @media only screen and (min-width: 1440px) {
     .marquee {
         gap: 64px;
@@ -117,3 +118,4 @@
         padding-right: 700px;
     }
 }
+
