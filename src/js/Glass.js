@@ -8,7 +8,7 @@ import '../css/glass.css';
     const compensation = {
         width: 0,
     };
-    const innerWidth = window.innerWidth;
+    let innerWidth = window.innerWidth;
 
     window.addEventListener('resize', () => {
         innerWidth = window.innerWidth;
@@ -28,7 +28,7 @@ import '../css/glass.css';
     });
     glassList.forEach(glass => {
         if (innerWidth < 375) {
-            console.log('Less 375');
+            // console.log('Less 375');
             glass.style.width = '90%';
             count = 6;
         }
@@ -38,14 +38,14 @@ import '../css/glass.css';
             parent.classList.add('gradient-red-tablet');
             glass.style.width = '75%';
             count = 6;
-            console.log('Less 768');
+            // console.log('Less 768');
         }
         if (768 < innerWidth && innerWidth < 1440) {
-            console.log('Less 1440');
+            // console.log('Less 1440');
         }
         let elem = document.createElement('div');
         compensation.width = glass.clientWidth / count + offset;
-        console.log(compensation);
+        // console.log(compensation);
         elem.classList.add('glass-elem');
         elem.style.width = `${compensation.width}px`;
         for (let i = 0; i < count; i++) {
