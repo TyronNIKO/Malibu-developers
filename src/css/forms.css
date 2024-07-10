@@ -1,19 +1,4 @@
-input,textarea {
-    padding-bottom: 20px;
-    border: none;
-    border-bottom: 1px rgba(var(--color-white),.2) solid;
-    background-color: transparent;
-    color: rgba(var(--color-white),1);
-    transition: 250ms ease-out;
-    transition-property: border-color, color ;
-}
-input::placeholder,textarea::placeholder  {
-    color: rgba(var(--color-white),.6);
-}
-input:hover,textarea:hover,input:focus,textarea:focus {
-    border-bottom: 1px rgba(var(--color-white),.5) solid;
-    color: rgba(var(--color-white),1);
-}
-textarea {
-    resize: none ;
-}
+input,textarea{padding-bottom:20px;border:none;border-bottom:1px rgba(var(--color-white),.2) solid;background-color:transparent;color:rgba(var(--color-white),1);transition:250ms ease-out;transition-property:border-color,color}
+input::placeholder,textarea::placeholder{color:rgba(var(--color-white),.6)}
+input:hover,textarea:hover,input:focus,textarea:focus{border-bottom:1px rgba(var(--color-white),.5) solid;color:rgba(var(--color-white),1); outline: transparent;}
+textarea{resize:none}

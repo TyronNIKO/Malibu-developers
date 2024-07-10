@@ -8,7 +8,7 @@ function projectsInit() {
         updateOnWindowResize: true,
         spaceBetween: 20,
         mousewheel: {
-            invert: true,
+            invert: false,
         },
         keyboard: {
             enabled: true,
