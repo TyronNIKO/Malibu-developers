@@ -2,11 +2,11 @@
     font-weight: 100 900;
     font-style: normal;
     font-family: 'Inter Tight';
-    src: url('/fonts/Inter_Tight/InterTight-VariableFont_wght.ttf') format('ttf');
+    src: url('./fonts/Inter_Tight/InterTight-VariableFont_wght.ttf') format('ttf');
   }
 @font-face {
     font-weight: 100 900;
     font-style: italic;
     font-family: 'Inter Tight';
-    src: url('/fonts/Inter_Tight/InterTight-Italic-VariableFont_wght.ttf') format('ttf');
+    src: url('./fonts/Inter_Tight/InterTight-Italic-VariableFont_wght.ttf') format('ttf');
   }
