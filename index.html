@@ -7,9 +7,9 @@
     <title>Malibu-developers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <script type="module" crossorigin src="/Malibu-developers/assets/vendor-fea644b1.js"></script>
-    <script type="module" crossorigin src="/Malibu-developers/assets/main-4d008428.js"></script>
-    <link rel="stylesheet" href="/Malibu-developers/assets/main-66a657b7.css">
+    <script type="module" crossorigin src="/Malibu-developers/assets/vendor-2e4beb6d.js"></script>
+    <script type="module" crossorigin src="/Malibu-developers/assets/main-e9fa8c3f.js"></script>
+    <link rel="stylesheet" href="/Malibu-developers/assets/main-ebb5172b.css">
     <link rel="stylesheet" href="/Malibu-developers/assets/vendor-5b0b01af.css">
   </head>
 
@@ -23,8 +23,8 @@
                 <li class="header-logo-link"><a class="header-text-logo" href="#">jefferson*</a></li>
             </ul>
             <div class="header-dropdown-menu">
-                <a class="header-list-menu" href="#"><span>Menu</span></a>
-                <ul class="header-dropdown-menu-content visually-hidden">
+                <button class="header-list-menu" type="button"><span>Menu</span></button>
+                <ul class="header-dropdown-menu-content d-none">
                     <li class="header-dropdown-menu-item"><a class="header-dropdown-menu-link" href="#about-me">About me</a></li>
                     <li class="header-dropdown-menu-item"><a class="header-dropdown-menu-link" href="#benefits">Benefits</a></li>
                     <li class="header-dropdown-menu-item"><a class="header-dropdown-menu-link" href="#projects">Projects</a></li>
@@ -247,10 +247,16 @@
                     </div>
                     <div class="project-img-bg">
                         <picture>
-                            <source srcset="/Malibu-developers/assets/image2-comp-e3ecc567.jpg , /Malibu-developers/assets/image2-comp-2@-2c830987.jpg 2x" media="(min-width:1440px)" />
-                            <source srcset="/Malibu-developers/assets/image2-comp-e3ecc567.jpg , /Malibu-developers/assets/image2-comp-2@-2c830987.jpg 2x" media="(min-width:768px)" />
-                            <source srcset="./img/projects/image2.jpg,
-                            ./img/projects/image2-2@.jpg 2x" media="(max-width:767px)" />
+                            <source media="(min-width:1440px)"
+                            srcset="/Malibu-developers/assets/image2-comp-e3ecc567.jpg , /Malibu-developers/assets/image2-comp-2@-2c830987.jpg 2x"
+                            />
+                            <source media="(min-width:768px)"
+                            srcset="/Malibu-developers/assets/image2-comp-e3ecc567.jpg , /Malibu-developers/assets/image2-comp-2@-2c830987.jpg 2x"/>
+
+                            <source media="(min-width:320px)"
+                            srcset="
+                            ./img/projects/image2.jpg,
+                            ./img/projects/image2-2@.jpg 2x"/>
                             <img src="/Malibu-developers/assets/image2-6e414c37.jpg" alt="realProject-image" class="project-img">
                         </picture>
                     </div>
