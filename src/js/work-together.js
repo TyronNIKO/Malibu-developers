@@ -1,13 +1,24 @@
 import axios from 'axios';
 // Submit btn going to modal content and clear the input after
 function workTogheterInit() {
+    const formData = JSON.parse(
+        localStorage.getItem('feedback-form-state')
+    ) ?? {
+        email: '',
+        comment: '',
+    };
+
     const modal = document.getElementById('modal');
     const modalContent = modal.querySelector('.modal-content');
     const closeModalBtn = modal.querySelector('.close-btn');
-    const emailInput = document.getElementById('email');
-    const commentInput = document.getElementById('comment');
+    const form = document.getElementById('contact-form');
+    const emailInput = form.email;
+    const commentInput = form.comment;
     const successMessage = document.querySelector('.success-message');
     const errorMessage = document.querySelector('.error-message');
+
+    emailInput.value = formData.email;
+    commentInput.value = formData.comment;
 
     function openModal() {
         modal.style.display = 'flex';
@@ -29,26 +40,27 @@ function workTogheterInit() {
             closeModal();
         }
     });
+    form.addEventListener('input', e => {
+        formData[e.target.name] = e.target.value.trim();
+        localStorage.setItem('feedback-form-state', JSON.stringify(formData));
+    });
 
-    const form = document.getElementById('contact-form');
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
         axios
-            .post('https://portfolio-js.b.goit.study/api/requests', {
-                email: emailInput.value,
-                comment: commentInput.value,
-            })
-            .then(function (response) {
+            .post('https://portfolio-js.b.goit.study/api/requests', formData)
+            .then(() => {
                 successMessage.style.display = 'block';
                 openModal();
-
-                emailInput.value = '';
-                commentInput.value = '';
             })
-            .catch(function (error) {
+            .catch(() => {
                 errorMessage.style.display = 'block';
             });
+        localStorage.clear();
+        event.target.reset();
+        formData.email = '';
+        formData.comment = '';
     });
 
     // Input border color changing and adding appropriate message
@@ -60,7 +72,7 @@ function workTogheterInit() {
     successMessage2.style.display = 'none';
 
     emailInput.addEventListener('blur', function () {
-        if (emailInput.value !== '') {
+        if (emailInput.value.trim()) {
             if (emailInput.validity.valid) {
                 emailInput.classList.add('input-valid');
                 emailInput.classList.remove('input-error');
