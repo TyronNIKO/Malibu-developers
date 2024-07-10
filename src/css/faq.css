@@ -5,7 +5,7 @@
 .faq .ac{margin-top:0px}
 .faq .ac.faq-item{margin-top:0px;padding:20px 0;border:none;border-bottom:1px solid rgba(250, 250, 250, 0.1);background-color:#1C1D20}
 .faq .ac.faq-item:first-child{border-top:1px solid rgba(250, 250, 250, 0.1)}
-.faq .ac.faq-item span{padding-right:20px;color:#fafafa;font-weight:600;font-size:20px;font-family:'Inter Tight';line-height:1.5;letter-spacing:-0.02em}
+.faq .ac.faq-item span{padding-right:20px;color:#fafafa;font-weight:600;font-size:20px;font-family:'Inter Tight',sans-serif;line-height:1.5;letter-spacing:-0.02em}
 .faq p.ac-text{max-width:343px;color:#fafafa;font-weight:500;font-size:16px;font-family:'Inter Tight';line-height:1.5;letter-spacing:-0.02em}
 .faq .accordion-container .ac .ac-trigger{display:flex;gap:44px;justify-content:space-between;padding:0;border:none;background:none;color:#fafafa;font-weight:600;font-size:20px;font-family:'Inter Tight',sans-serif;line-height:1.5;letter-spacing:-0.02em;text-align:left;text-decoration:none}
 .faq .faq-title-paragraph{max-width:485px}
