@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/Malibu-developers/assets/vendor-fea644b1.js"></script>
-    <script type="module" crossorigin src="/Malibu-developers/assets/main-666d5a7b.js"></script>
-    <link rel="stylesheet" href="/Malibu-developers/assets/main-0f7f9ea6.css">
+    <script type="module" crossorigin src="/Malibu-developers/assets/main-5e11be1a.js"></script>
+    <link rel="stylesheet" href="/Malibu-developers/assets/main-4ebc9480.css">
     <link rel="stylesheet" href="/Malibu-developers/assets/vendor-5b0b01af.css">
   </head>
 
@@ -60,20 +60,23 @@
 </div>
     <main>
       <!-- hero.html -->
-<section class="section-hero ">
-    <div class="gradient gradient-red">
-        <div class="glass"></div>
-    </div>
-    <div class="hero-container">
-        <h1 class="hero-page-title">Hello.<br> I'm Fullstack developer Lloyd Jefferson.</h1>
-        <div class="hero-contact">
-            <ul class="hero-social-list">
-                <li class="hero-social-list-item"><a class="hero-social-list-link btn" href="https://www.instagram.com/goitclub/">IG</a></li>
-                <li class="hero-social-list-item"><a class="hero-social-list-link btn" href="https://www.facebook.com/goITclub/">FB</a></li>
-                <li class="hero-social-list-item"><a class="hero-social-list-link btn" href="https://www.youtube.com/c/GoIT">YT</a></li>
-                <li class="hero-social-list-item"><a class="hero-social-list-link btn" href="https://github.com/TyronNIKO/Malibu-developers">GH</a></li>
-                <li class="hero-social-list-item"><a class="hero-contact-mail btn" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
-            </ul>
+<section class="section-hero">
+    <div class="container">
+
+        <div class="gradient gradient-red">
+            <div class="glass"></div>
+        </div>
+        <div class="hero-container">
+            <h1 class="hero-page-title">Hello.<br> I'm Fullstack developer Lloyd Jefferson.</h1>
+            <div class="hero-contact">
+                <ul class="hero-social-list">
+                    <li class="hero-social-list-item"><a class="hero-social-list-link btn" href="https://www.instagram.com/goitclub/">IG</a></li>
+                    <li class="hero-social-list-item"><a class="hero-social-list-link btn" href="https://www.facebook.com/goITclub/">FB</a></li>
+                    <li class="hero-social-list-item"><a class="hero-social-list-link btn" href="https://www.youtube.com/c/GoIT">YT</a></li>
+                    <li class="hero-social-list-item"><a class="hero-social-list-link btn" href="https://github.com/TyronNIKO/Malibu-developers">GH</a></li>
+                    <li class="hero-social-list-item"><a class="hero-contact-mail btn" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
@@ -570,74 +573,78 @@
       <!-- work-together.html -->
 <section class="work-together" id="order">
     <div class="container">
-        <div class="work-together-h2">
-            <img
-                id="work-together"
-                src="/Malibu-developers/assets/logo-0e2fbac5.png"
-                alt="Опис зображення" />
-            <h2 class="work-title">LET’S <span class="work-span">WORK</span></h2>
-            <h2 class="work-title-2d-part">TOGETHER</h2>
-        </div>
-        <form id="contact-form" class="contact-form">
-            <div class="form-inputs">
-                <div class="input-group">
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-                        placeholder="clients@gmail.com"
-                        required />
-                    <span class="error-message">Invalid email, try again</span>
-                    <span class="success-message">Succes!</span>
+
+        <div class="work-together-content">
+            <h2 class="work-title">
+                <img
+                    id="work-together"
+                    src="/Malibu-developers/assets/logo-0e2fbac5.png"
+                    alt="Опис зображення" /> Let’s<span>work</span> togheter
+            </h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-inputs">
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+                            placeholder="clients@gmail.com"
+                            required />
+                        <span class="error-message">Invalid email, try again</span>
+                        <span class="success-message">Succes!</span>
+                    </div>
+                    <div class="input-group">
+                        <input
+                            class="input-comment"
+                            type="text"
+                            id="comment"
+                            name="comment"
+                            placeholder="comments"
+                            required />
+                    </div>
+                    <button class="work-button btn btn-red btn-round" type="submit">Send</button>
+
                 </div>
-                <input
-                    class="input-comment"
-                    type="text"
-                    id="comment"
-                    name="comment"
-                    placeholder="comments"
-                    required />
-                <button class="work-button" type="submit">Send</button>
+            </form>
+            <div class="work-links-info">
+                <a class="work-mail btn" href="mailto:lojdjefferson@gmail.com">llojdjefferson@gmail.com</a>
+                <a class="work-tel btn" href="tel:+3801111111111">+380 11 1111 11 11</a>
             </div>
-        </form>
-        <div class="work-links-info">
-            <a class="work-mail" href="mailto:lojdjefferson@gmail.com">llojdjefferson@gmail.com</a>
-            <a class="work-tel" href="tel:+3801111111111">+3801111111111</a>
-        </div>
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <div class="work-close-btn">
-                    <button class="close-btn">
-                        <svg
-                            width="14"
-                            height="14"
-                            viewBox="0 0 14 14"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1.5 1.5L12.5 12.5"
-                                stroke="#FAFAFA"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M12.5 1.5L1.5 12.5"
-                                stroke="#FAFAFA"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="modal-text">
-                    <p class="modal-message-1"> Thank you for your interest in cooperation! </p>
-                    <p class="modal-message-2"> The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch. </p>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div class="work-close-btn">
+                        <button class="close-btn">
+                            <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 14 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.5 1.5L12.5 12.5"
+                                    stroke="#FAFAFA"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M12.5 1.5L1.5 12.5"
+                                    stroke="#FAFAFA"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-text">
+                        <p class="modal-message-1"> Thank you for your interest in cooperation! </p>
+                        <p class="modal-message-2"> The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch. </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
     </main>
     
   </body>
