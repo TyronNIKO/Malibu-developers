@@ -2,69 +2,56 @@ import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import Swiper from 'swiper';
-import 'swiper/css';
-import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
-import sprite from '/img/icons/icons-sprite.svg';
+import { Keyboard, Mousewheel } from 'swiper/modules';
 
-function initReviews() {
-    const swiperReviews = new Swiper('.reviews-wrapper', {
-        modules: [Navigation, Keyboard, Mousewheel],
-        direction: 'horizontal',
+function reviewsInit() {
+    const swiper = new Swiper('.reviews-swiper', {
+        modules: [Keyboard, Mousewheel],
         updateOnWindowResize: true,
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        enabled: true,
-        swipeHandler: '.reviews-item',
-        speed: 300,
         spaceBetween: 20,
         height: 302,
-
         keyboard: {
             enabled: true,
-            onlyInViewport: false,
+            onlyInViewport: true,
         },
-
         mousewheel: {
-            invert: true,
+            invert: false,
         },
-
         breakpoints: {
             768: {
                 slidesPerView: 2,
-                slidesPerGroup: 1,
                 spaceBetween: 16,
             },
-
             1440: {
                 slidesPerView: 4,
-                slidesPerGroup: 1,
                 spaceBetween: 16,
             },
         },
 
         navigation: {
-            prevEl: '.reviews-wrapper .prev',
-            nextEl: '.reviews-wrapper .next',
-            preventClicks: false,
+            prevEl: '.reviews-swiper .prev',
+            nextEl: '.reviews-swiper .next',
+            // preventClicks: false,
         },
     });
 
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Tab') {
+            event.preventDefault();
+            if (event.shiftKey) {
+                swiper.slidePrev();
+            } else {
+                swiper.slideNext();
+            }
+        }
+    });
     let currentId = 1;
 
     const selectors = {
         container: document.querySelector('.reviews-list'),
-        btnPrev: document.querySelector('.reviews-wrapper .prev'),
-        btnNext: document.querySelector('.reviews-wrapper .next'),
+        btnPrev: document.querySelector('.reviews-swiper .prev'),
+        btnNext: document.querySelector('.reviews-swiper .next'),
     };
-    const temp = `
-            <svg class="reviews-btn-left-icon btn-icon" width="24" height="24" aria-label="left arrow">
-                <use href="${sprite}#icon-arrow"></use>
-            </svg>
-            `;
-    console.log(selectors.btnPrev, temp);
-    setTimeout(() => {
-        selectors.btnPrev.insertAdjacentHTML('beforeend', temp);
-    }, 2000);
 
     async function fetchReviews(id) {
         try {
@@ -88,13 +75,13 @@ function initReviews() {
             const markup = reviews
                 .map(
                     ({ _id, author, avatar_url, review }) => `
-                                                            <div class="swiper-slide">
-                                                                <li class="reviews-item " data="${_id}">
-                                                                <img class="reviews-img" src="${avatar_url}" alt="${author}"/>
-                                                                <p class="reviews-text">${review}</p>
-                                                                <h2 class="reviews-subtitle">${author}</h2>
-                                                                </li>
-                                                            </div>
+                                                            <li class="swiper-slide " data="${_id}">
+                                                                <div class="reviews-item">
+                                                                    <img class="reviews-img" src="${avatar_url}" alt="${author}"/>
+                                                                    <p class="reviews-text">${review}</p>
+                                                                    <h2 class="reviews-subtitle">${author}</h2>
+                                                                </div>
+                                                            </li>
                                                             `
                 )
                 .join('');
@@ -128,4 +115,4 @@ function initReviews() {
         });
     };
 }
-initReviews();
+reviewsInit();

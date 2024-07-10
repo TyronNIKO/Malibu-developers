@@ -1,3 +1,5 @@
+import 'swiper/css';
+
 import './js/about-me.js';
 import './js/benefits.js';
 import './js/covers.js';

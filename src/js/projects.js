@@ -1,55 +1,34 @@
-// core version + navigation, pagination modules:
 import Swiper from 'swiper';
-import { Keyboard, Mousewheel, Navigation } from 'swiper/modules';
-// import Swiper and modules styles
-import 'swiper/css';
+import { Keyboard, Mousewheel } from 'swiper/modules';
 
 // init Swiper:
-const swiper = new Swiper('.projects-slide', {
-    modules: [Navigation, Mousewheel, Keyboard],
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
-
-    // Navigation arrows
-
-    mousewheel: {
-        invert: true,
-    },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-    },
-
-    slidesPerView: 1,
-    spaceBetween: 20,
-
-    breakpoints: {
-        768: {},
-
-        1440: {
-            direction: 'horizontal',
+function projectsInit() {
+    const swiper = new Swiper('.projects .projects-swiper', {
+        modules: [Mousewheel, Keyboard],
+        updateOnWindowResize: true,
+        spaceBetween: 20,
+        mousewheel: {
+            invert: true,
         },
-    },
-
-    navigation: {
-        prevEl: '.projects-slide .prev',
-        nextEl: '.projects-slide .next',
-        preventClicks: false,
-    },
-
-    // reachBeginning: document.querySelector('swiper-button-prev').disabled = true,
-    //reachEnd: document.querySelector('swiper-button-next').classList.add('.disabled'),
-});
-
-//const theSwiper = document.querySelector('.swiper').swiper;
-
-// Now you can use all slider methods like
-
-/* refs.rightButton.addEventListener('click', () => {
-    theSwiper.slideNext()
-
-})
-refs.leftButton.addEventListener('click', () => {
-    theSwiper.slidePrev()
-}) */
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+        },
+        navigation: {
+            prevEl: '.projects .projects-swiper .prev',
+            nextEl: '.projects .projects-swiper .next',
+            preventClicks: false,
+        },
+    });
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Tab') {
+            event.preventDefault();
+            if (event.shiftKey) {
+                swiper.slidePrev();
+            } else {
+                swiper.slideNext();
+            }
+        }
+    });
+}
+projectsInit();
