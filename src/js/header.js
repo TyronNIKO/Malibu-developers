@@ -53,5 +53,9 @@ function header() {
         bodyEl.classList.remove('mob-menu-overflow');
         // window.location.href = e.target.dataset.source;
     }
+    document.addEventListener('keydown', e => {
+        if (mobMenu.classList.contains('is-open') && e.code === 'Escape')
+            mobMenu.classList.remove('is-open');
+    });
 }
 header();
