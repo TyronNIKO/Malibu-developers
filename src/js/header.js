@@ -44,7 +44,7 @@ function headerInit() {
     menuEl.addEventListener('click', toggleDropdownMenu);
     burgerMenu.addEventListener('click', openModalMenu);
     dropdownMenu.addEventListener('click', toggleDropdownMenu);
-    hiddenMenu.addEventListener('click', openModalMenu);
+    hiddenMenu.addEventListener('click', closeModalMenu);
     closeBtn.addEventListener('click', closeModalMenu);
     orderBtn.addEventListener('click', closeModalMenu);
     document.addEventListener('keydown', e => {
