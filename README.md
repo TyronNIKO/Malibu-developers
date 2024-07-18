@@ -14,3 +14,10 @@
   - **Work together** (footer) - Vladyslav
 
 19 30 по Києву - щоденний збір
+
+
+**Оцінка швидкості сайту**
+https://pagespeed.web.dev/analysis/https-tyronniko-github-io-Malibu-developers/rrxve1les1?form_factor=mobile
+
+**Наш канбан**
+https://rada-developer.atlassian.net/jira/software/projects/KAN/boards/1/timeline
